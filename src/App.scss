@@ -4,7 +4,7 @@ $bakgrund: rgb(241, 241, 241);
 
 $text: #333;
 
-$accent: rgb(61, 61, 61); //rgb(108, 228, 72);
+$accent: rgb(168, 168, 168); //rgb(108, 228, 72);
 
 $accent-dark: rgb(61, 61, 61); //rgb(224, 153, 165);  //rgb(2, 82, 13);
 $accent-light: rgb(211, 32, 32);
@@ -14,6 +14,7 @@ $accent-light: rgb(211, 32, 32);
 body {
   background: $bakgrund; 
   color: $text;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.4;
   margin: 0;
 }
@@ -120,6 +121,7 @@ a {
 .thumbnail-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {

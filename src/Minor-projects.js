@@ -7,33 +7,31 @@ import amhjo from './assets/amhjo.png';
 import leo from './assets/leo.png';
 import Hello from './Hello.js';
 import blob from './assets/blob.svg';
-import Minorprojects from './Minor-projects.js';
  
-function Projects(props) {
+function Minorprojects(props) {
 
   return (
         // Render a Thumbnail component
-        <div className="frontpageWrapper">
+        <div>
         
-        <Hello /> {/* Laddar in introkomponenten med mitt namn */}
 
-        <h1 id="frontpage-h1">Case studies</h1>
+        <h1 id="frontpage-h1">Other projects</h1>
         
         <div className="thumbnail-container">
 
-            <Thumbnail
+        <Thumbnail
                 link="/Remap"
-                title="Re:map"
+                title="Sjukhushästen"
                 image={remap}
                 desc="Moodboard for event and graphic expression."
                 category="Graphic design"
             />
 
             <Thumbnail
-                link="/Konstruktivism"
-                image={konstrukt}
-                title="Konstruktivism"
-                category="Graphic design"
+                link="/Chrome"
+                image={amhjo}
+                title="Chrome letter"
+                category="Web design"
                 desc="Moodboard for event and graphic expression."
             />
 
@@ -45,12 +43,11 @@ function Projects(props) {
                 desc="Moodboard for event and graphic expression."
             />
 
-        </div>
 
-        <Minorprojects />
-      </div>
+        </div>
+    </div>
   )
 
 }
  
-export default Projects;
+export default Minorprojects;
