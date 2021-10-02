@@ -1,37 +1,35 @@
 import React from "react"
-import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
-import './App.scss';
-import remap from './assets/remap.png';
-import konstrukt from './assets/konstrukt.png';
+import Thumbnail from './Thumbnail.js.js.js'; // Import the Thumbnail component
 import amhjo from './assets/amhjo.png';
-import leo from './assets/leo.png';
-import Hello from './Hello.js';
-import blob from './assets/blob.svg';
-import Minorprojects from './Minor-projects.js';
+import Hello from './Hello.js.js.js';
+import Subheader from './Subheader.js';
  
-function Projects(props) {
+function Home(props) {
 
   return (
         // Render a Thumbnail component
-        <div className="frontpageWrapper">
+        <div className="PageWrapper">
         
-        <Hello /> {/* Laddar in introkomponenten med mitt namn */}
+        <Hello 
+            headlineContent="Hi, I'm A-M! Designer, developer, and lover of RPGs. Welcome to my portfolio."
+        />
 
         <h1 id="frontpage-h1">Case studies</h1>
+        <span class="subtag">A selection of projects written out as case studies</span>
         
         <div className="thumbnail-container">
-
             <Thumbnail
                 link="/Remap"
                 title="Re:map"
-                image={remap}
+                image={amhjo}
                 desc="Moodboard for event and graphic expression."
                 category="Graphic design"
+                category2="Test"
             />
 
             <Thumbnail
                 link="/Konstruktivism"
-                image={konstrukt}
+                image={amhjo}
                 title="Konstruktivism"
                 category="Graphic design"
                 desc="Moodboard for event and graphic expression."
@@ -44,13 +42,16 @@ function Projects(props) {
                 category="Web design"
                 desc="Moodboard for event and graphic expression."
             />
-
         </div>
 
-        <Minorprojects />
+        <Subheader 
+        headlineContent="Besök mig på Github"
+        subHeadline="From time to time, I like to post the odd evening project on my GitHub."
+        />
+
       </div>
   )
 
 }
  
-export default Projects;
+export default Home;

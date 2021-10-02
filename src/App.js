@@ -1,9 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom'; 
-import Projects from './Projects.js'; 
-import About from './About.js';
-import { Remap, Konstruktivism, Chrome, Leo } from './Cases.js';  
-import Header from './Header.js';
+import { BrowserRouter, Route } from 'react-router-dom'; 
+import Projects from './components/Projects.js'; 
+import About from './components/About.js';
+import { Remap, Internetskolan, Chrome } from './components/Cases.js';  
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+import Home from './components/Home.js';
+import Contact from './components/Contact.js';
 import './App.scss';
  
 function App() {
@@ -14,22 +17,17 @@ function App() {
     
         <Header />  {/* Laddar in headern/menyn */}
 
-        <Route exact path="/" component={Projects} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
         <Route path="/about" component={About} />
         <Route path="/Remap" component={Remap} />
-        <Route path="/Konstruktivism" component={Konstruktivism} />
+        <Route path="/Internetskolan" component={Internetskolan} />
         <Route path="/Chrome" component={Chrome} />
-        <Route path="/Leo" component={Leo} />
+        <Route path="/contact" component={Contact} />
 
+        <Footer />
 
-        <div className="footer">
-          <span className="footer-con">
-                <p>© Anna-Maria Hjorth 2021</p>
-                <p>tjenixen@amhjo.com</p>
-                <p>Instagram – LinkedIn</p>
-              </span>
-          </div>
-        </div>
+      </div>
 
     </BrowserRouter>
     

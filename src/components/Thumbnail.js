@@ -1,6 +1,5 @@
 import React from 'react'; // Import the Component component from React
 import {Link} from 'react-router-dom'; // Import the Link component
-import './App.scss';
  
 function Thumbnail(props) {
 
@@ -13,6 +12,7 @@ function Thumbnail(props) {
           <div className="project-title">{props.title}</div>
           <div className="project-desc">{props.desc}</div>
           <div className="project-category">{props.category}</div>
+          <div className="project-category2">{props.category2}</div>
 
         </Link>
       </div> 
@@ -20,5 +20,4 @@ function Thumbnail(props) {
 
   }
 
- 
 export default Thumbnail;
