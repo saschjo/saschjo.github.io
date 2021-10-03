@@ -29,6 +29,10 @@ function InternetskolanContent(props) {
       caption="Front page of the launched hi-fi prototype."
       />
 
+<div className="visit-case-subject">
+        <a href={'https://amhjo.github.io/internetskolan/'}>Experience Internetskolan here</a>
+      </div>
+
       <div className="case-text">
         <h3>Introduction</h3>
         <p>In the spring of 2021, we were tasked to take on real, live design projects with a client as part of the class “Designproject” (7,5hp). We had a month to work with our client and produce a design solution to fit their needs.</p>
@@ -211,7 +215,7 @@ function InternetskolanContent(props) {
       />
 
     <div className="case-text">
-      <h4>UX/UI iteration</h4>
+      <h4>Final iteration</h4>
       <p>As we were developing, we re-worked the color palette to a more vibrant purple with a bright pink accent color. A wave shape was added on the top and bottom to give the website a more organic and warm feel. We also iterated on the location tracker at the bottom to make it easier to navigate, added a back to top-button and simplified the headers of the lessons to make it more clean and the content more readable. Since we'd spent so much time working on our hi-fi wireframes and planning our code, it was a seamless process to convert our design to code and continuously iterate on individual elements.</p>
     </div>
 
