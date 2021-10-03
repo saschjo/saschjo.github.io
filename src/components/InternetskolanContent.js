@@ -1,6 +1,5 @@
 import React from "react";
 import FullImage from "./CaseCmpnts.js";
-import remap_1 from './assets/remap/remap_1.png';
 import internetskolan_moodboard from './assets/internetskolan/internetskolan_moodboard.png';
 import internetskolan_personas from './assets/internetskolan/internetskolan_personas.png';
 import internetskolan_behovsanalys from './assets/internetskolan/internetskolan_behovsanalys.png';
@@ -212,7 +211,7 @@ function InternetskolanContent(props) {
       />
 
     <div className="case-text">
-      <h4>UI iteration</h4>
+      <h4>UX/UI iteration</h4>
       <p>As we were developing, we re-worked the color palette to a more vibrant purple with a bright pink accent color. A wave shape was added on the top and bottom to give the website a more organic and warm feel. We also iterated on the location tracker at the bottom to make it easier to navigate, added a back to top-button and simplified the headers of the lessons to make it more clean and the content more readable. Since we'd spent so much time working on our hi-fi wireframes and planning our code, it was a seamless process to convert our design to code and continuously iterate on individual elements.</p>
     </div>
 
