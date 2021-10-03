@@ -73,7 +73,7 @@ body {
 
 /* NAVIGATION */
 .navigation-sub {
-  width: 18%;
+  min-width: 18%;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -125,15 +125,28 @@ a:hover {
   }
 
   #pic1 {
-    transform: translateY(-30%) translateX(-10%) scale(80%);
+    -moz-transform: scale(0.85, 0.85) translate(-10%, -32%);
+    -webkit-transform: scale(0.85, 0.85) translate(-10%, -32%);
+    -ms-transform: scale(0.85, 0.85) translate(-10%, -32%);
+    -o-transform: scale(0.85, 0.85) translate(-10%, -32%);
+    transform: scale(0.85, 0.85) translate(-10%, -32%);
   }
 
   #pic2 {
-    transform: translateY(-55%) translateX(35%) scale(10%);
+    -moz-transform: scale(0.1) translate(200%, -500%);
+    -webkit-transform: scale(0.1) translate(200%, -500%);
+    -ms-transform: scale(0.1) translate(200%, -500%);
+    -o-transform: scale(0.1) translate(200%, -500%);
+    transform:  scale(0.1) translate(200%, -500%);
   }
 
   #pic3 {
-    transform: translateY(-100%) translateX(95%) scale(30%);
+    -moz-transform: scale(0.3, 0.3) translate(280%, -330%);
+    -webkit-transform: scale(0.3, 0.3) translate(280%, -330%);
+    -ms-transform: scale(0.3, 0.3) translate(280%, -330%);
+    -o-transform: scale(0.3, 0.3) translate(280%, -330%);
+    transform: scale(0.3, 0.3) translate(280%, -330%);
+
   }
 }
 
@@ -865,10 +878,11 @@ h1 {
     justify-content: space-between;
 
     #website-title {
-      width: 30%;
+      min-width: 30%;
     }
 
     .navigation-sub {
+      display: block;
       width: 20%
     }
   }
@@ -925,12 +939,12 @@ h1 {
     padding: 1.5% 1.5% 3% 1.5%;
 
     #website-title {
-      width: 30%;
+      min-width: 30%;
     }
 
     .navigation-sub {
-      width: 30%;
       justify-content: right;
+      text-align: right;
     }
   }
 
@@ -1278,7 +1292,7 @@ h1 {
 
   .navigation {
     #website-title {
-      width: 50%;
+      min-width: 50%;
     }
   }
   .welcome-window {
@@ -1380,11 +1394,11 @@ h1 {
     padding: 1.5% 1.5% 3% 1.5%;
 
     #website-title {
-      width: 50%;
+      min-width: 50%;
     }
 
     .navigation-sub {
-      width: 50%;
+      min-width: 50%;
     }
   }
 
