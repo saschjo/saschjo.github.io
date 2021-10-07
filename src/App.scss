@@ -288,7 +288,7 @@ a:hover {
   h1 {
     font-family: degular;
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--text);
     text-transform: uppercase;
@@ -298,7 +298,7 @@ a:hover {
   a {
     font-weight: 300;
     font-size: 20px;
-    padding-right: 1.5%;
+    padding-right: 3%;
     color: var(--accent-dark);
     transition: 0.2s;
   }
@@ -538,15 +538,18 @@ a:hover {
 }
 
 .visit-case-subject {
-  margin-top: 3%;
+  margin: 3%;
   display: flex;
   justify-content: center;
 
   a {
-    padding: 1%;
-    border: 2px solid var(--text);
-    border-radius: 15px;
+    padding: 1.5%;
+    border: 1px solid var(--text);
+    border-radius: 30px;
+    font-size: 14px;
     transition: 0.3s ease;
+    font-weight: 300;
+    font-family: gopher;
     }
   
     a:hover {
@@ -554,7 +557,7 @@ a:hover {
     border-color: var(--accent);
     }
   
-}
+} 
 
 
 /* ------ */
@@ -564,7 +567,7 @@ a:hover {
   height: 100%;
   width: auto;
   flex-direction: column;
-  padding: 0% 15% 9% 15%;
+  padding: 0% 15% 7.5% 15%;
 
   animation-name: fadeInOpOnly;
   animation-duration: 0.6s;
@@ -595,12 +598,46 @@ a:hover {
   width: 50%;
 }
 
+.about {
+  margin-top: 3%;
+
+  p {
+    font-size: 18px;
+    color: var(--accent-light);
+    line-height: 1.5em;
+    padding: 0 0 3% 0;
+    margin: 0;
+  }
+}
+
 .column-1  {
   width: 60%;
+  line-height: 1.5em;
+
+  strong {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  a {
+    font-weight: 400;
+    padding-right: 3%;
+    font-size: 20px;
+    color: var(--accent-light);
+    transition: 0.2s ease;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: var(--accent);
+  }
 }
 
 .column-2 {
+  display: flex;
   width: 40%;
+  flex-direction: column;
 
   img {
     object-fit: cover;
@@ -612,6 +649,25 @@ a:hover {
 
   img:hover {
     filter: grayscale(0%);
+  }
+
+  button {
+    margin: 5% 0 2% 0;
+    background: none;
+    color: var(--text);
+    padding: 0;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  button:hover {
+    color: var(--accent);
+  }
+
+  .factoid {
+    font-size: 15px;
   }
 }
 
@@ -648,20 +704,6 @@ h1 {
 .container-resume {
   margin: 7% 30% 0% 30%;
   line-height: 1.4em;
-}
-
-
-/*ABOUT PAGE*/
-
-.about {
-  margin-top: 3%;
-
-  p {
-    font-size: 16px;
-    line-height: 1.5em;
-    padding: 0 0 2% 0;
-    margin: 0;
-  }
 }
 
 
@@ -763,6 +805,7 @@ h1 {
 
   .solidborderbox {
     border: solid 1px var(--accent-dark);
+    box-sizing: border-box;
     border-radius: 8px;
     padding: 4%;
   }
@@ -787,8 +830,12 @@ h1 {
 
 //Hello
 
+.page-con {
+  padding-top: 7%;
+}
+
 .Hello {
-  padding: 5% 15% 0% 15%;
+  padding: 0% 15% 0% 15%;
   background-size: 200% 200%;
   animation: Animation 5s ease infinite;
   animation-name: fadeinLess;
@@ -871,6 +918,66 @@ h1 {
 
 
 /* MEDIA QUERIES */
+
+/* Large display */
+@media only screen and (max-width: 2000px) {
+
+  .frontpage-orbs {
+    margin-left: 2%;
+    width: 98vw;
+  }
+
+  .welcome-window {
+    margin: 9% 0 0 18%;
+  }
+  .frontpage-links {
+    margin: 2% 0 0 18%;
+  }
+
+  .container-project {
+    margin: 5% 18% 0 18%;
+  }
+
+  .project {
+    max-width: 27%;
+
+    .project-title {
+      padding: 7% 0 3% 1%;
+      font-size: 28px;
+    }
+
+    .project-desc {
+      font-size: 17px;
+    }
+
+    .project-category {
+      margin-top: 4%;
+    }
+  }
+
+  .Hello {
+    padding: 0% 18%  0% 18%;
+
+    h2 {
+      padding-top: 0.5%;
+    }
+  }
+
+  .PageWrapper {
+    padding: 0% 18% 7.5% 18%;
+  }
+
+  .row {
+    column-gap: 4%;
+  }
+
+  .case-text {
+    margin: 0 18% 18% 18%;
+  }
+
+}
+
+
 @media only screen and (max-width: 1450px) {
   .navigation {
     padding: 1.5% 1.5% 3% 1.5%;
@@ -1011,8 +1118,12 @@ h1 {
       }
   }
 
+  .page-con {
+    padding-top: 10%;
+  }
+
   .Hello {
-      padding: 10% 9% 0% 9%;
+      padding: 0% 9% 0% 9%;
 
       h1 {
         font-size: 30px;
@@ -1150,7 +1261,7 @@ h1 {
   }
 
   .InnerCaseWrapper {
-    padding: 2% 5% 9% 5%;
+    padding: 2% 0% 9% 0%;
   }
   
   .footer-con {
@@ -1160,6 +1271,34 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
+
+  //Blue orbs for some tablets
+  .frontpage-orbs {
+  
+    #pic1 {
+      -moz-transform: scale(1.2, 1.2) translate(-5%, -20%);
+      -webkit-transform: scale(1.2, 1.2) translate(-5%, -20%);
+      -ms-transform: scale(1.2, 1.2) translate(-5%, -20%);
+      -o-transform: scale(1.2, 1.2) translate(-5%, -20%);
+      transform: scale(1.2, 1.2) translate(-5%, -20%);
+    }
+  
+    #pic2 {
+      -moz-transform: scale(0.2, 0.2) translate(150%, -130%);
+      -webkit-transform: scale(0.2, 0.2) translate(150%, -130%);
+      -ms-transform: scale(0.2, 0.2) translate(150%, -130%);
+      -o-transform: scale(0.2, 0.2) translate(150%, -130%);
+      transform:  scale(0.2, 0.2) translate(150%, -130%);
+    }
+  
+    #pic3 {
+      -moz-transform: scale(0.7, 0.7) translate(130%, -100%);
+      -webkit-transform: scale(0.7, 0.7) translate(130%, -100%);
+      -ms-transform: scale(0.7, 0.7) translate(130%, -100%);
+      -o-transform: scale(0.7, 0.7) translate(130%, -100%);
+      transform: scale(0.7, 0.7) translate(130%, -100%);
+    }
+  }
 
 
   //Case grid
@@ -1323,6 +1462,17 @@ h1 {
   .flex-justify {
     padding: 0% 0 15% 0;
   }
+
+
+.case-text {
+  margin: 0% 5% 20% 5%;
+}
+
+.fullImage .img-caption {
+  font-size: 13px;
+  padding-top: 2.5%;
+}
+
 }
 
 /* ---- END TABLETS ---- */
@@ -1338,11 +1488,40 @@ h1 {
 }
 
 @media only screen and (max-width: 500px) {
+
+  //Blue orbs for some smart phones
+  .frontpage-orbs {
+  
+    #pic1 {
+      -moz-transform: scale(1.9, 1.9) translate(0%, 5%);
+      -webkit-transform: scale(1.9, 1.9) translate(0%, 5%);
+      -ms-transform: scale(1.9, 1.9) translate(0%, 5%);
+      -o-transform: scale(1.9, 1.9) translate(0%, 5%);
+      transform: scale(1.9, 1.9) translate(0%, 5%);
+    }
+  
+    #pic2 {
+      -moz-transform:scale(0.25, 0.25) translate(150%, -100%);
+      -webkit-transform:scale(0.25, 0.25) translate(150%, -100%);
+      -ms-transform: scale(0.25, 0.25) translate(150%, -100%);
+      -o-transform: scale(0.25, 0.25) translate(150%, -100%);
+      transform:  scale(0.25, 0.25) translate(150%, -100%);
+    }
+  
+    #pic3 {
+      -moz-transform: scale(0.9, 0.9) translate(115%, 10%);
+      -webkit-transform:scale(0.9, 0.9) translate(115%, 10%);
+      -ms-transform: scale(0.9, 0.9) translate(115%, 10%);
+      -o-transform: scale(0.9, 0.9) translate(115%, 10%);
+      transform: scale(0.9, 0.9) translate(115%, 10%);
+    }
+  }
+
   .welcome-window {
     
     .frontpage {
       h1 {
-        font-size: 32px;
+        font-size: 30;
       }
     }
   }
@@ -1353,25 +1532,71 @@ h1 {
     }
 
     a {
-      font-size: 20px;
+      font-size: 18px;
       padding-right: 3%;
     }
   }
 
+  .page-con {
+    padding-top: 13%;
+  }
+
   .Hello h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   //Casegrid
   .project {
     max-width: 100%;
     margin-bottom: 20%;
+
+    .project-title {
+      font-size: 24px;
+    }
+  }
+
+  //Case
+  .object-header {
+    margin-top: 15%;
+  }
+
+  .container-project {
+    .object-title {
+      font-size: 28px;
+      padding-bottom: 1%;
+    }
+
+    .portfolio-object {
+      margin-bottom: 15%;
+    }
+
+    .visit-case-subject a {
+      padding: 2.5%;
+    }
+
+    .case-text {
+      margin: 0% 2% 20% 2%;
+
+      p {
+        margin-top: 8%;
+      }
+
+      h4 {
+        margin: 8% 0 -5% 0;
+      }
+
+      h3 {
+        margin: 9% 0 -4% 0;
+      }
+    }
+
   }
 
   //About
   .row-about {
 
     .column-1 {
+      padding-top: 6%;
       p {
         font-size: 16.5px;
         padding-bottom: 6%;
@@ -1379,7 +1604,7 @@ h1 {
     }
     .column-2 {
       img {
-        width: 20em;
+        width: 100%;
       }
     }
   }
@@ -1388,6 +1613,15 @@ h1 {
 
 
 @media only screen and (max-width: 450px) {
+
+  .welcome-window {
+    height: 58%;
+    margin-top: 15%;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
 
   .navigation {
     padding: 1.5% 1.5% 3% 1.5%;

@@ -3,6 +3,7 @@ import ProjectObject from './portfolio-object.js';
 import RemapContent from './RemapContent.js';
 import SwAnimalsContent from './SwAnimalsContent.js';
 import InternetskolanContent from './InternetskolanContent.js';
+import  SustainlabContent  from './SustainlabContent.js';
  
 function Remap(props) {
 
@@ -47,7 +48,7 @@ function Internetskolan(props) {
 
 }
 
-function Chrome(props) {
+function Codimals(props) {
 
   return (
         // Render a Thumbnail component
@@ -72,9 +73,36 @@ function Chrome(props) {
   )
 
 }
+
+function SustainLab(props) {
+
+  return (
+        // Render a Thumbnail component
+      <div className="container-project">
+        <div className="project-container">
+          <div className="project-1">
+              <ProjectObject
+                  title="SustainLab-SH"
+                  category="✧ Web Development and Graphic Design"
+                  uppdragstyp="Live client project"
+                  mission="Website and light visual identity"
+                  myrole="Project manager, developer and designer"
+                  datum="Fall of 2020 – Spring of 2021"
+                  description="SustainLab-SH is a venture of the Environmental Science Department, Södertörn University. They recruited me and my project partner David Wechana to create a website for them that they would be able to update the site themselves, share their research, as well publish posts. They also needed a logo. We realized this project in Wordpress and Elementor, utilizing user research and testing to validate the project iteratively throughout. The client was very happy with the result, and the website will be easy to expand as needed in the future."
+                />
+
+              <SustainlabContent />
+
+          </div>
+        </div>
+      </div>
+  )
+
+}
  
 export {
   Remap,
   Internetskolan,
-  Chrome
+  Codimals,
+  SustainLab
 }

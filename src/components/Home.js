@@ -20,13 +20,15 @@ function Home(props) {
 
             <div className="frontpage-links">
                 <h1>Find me in other places</h1>
-                <a href={'http://instagram.com/amhjo.design'}>Instagram</a> <a href={'http://google.com'}>GitHub</a> <a href={'http://google.com'}>LinkedIn</a>
+                <a href={'http://instagram.com/amhjo.design'}>Instagram</a> <a href={'https://www.linkedin.com/in/anna-maria-hjorth-48bb327a/'}>LinkedIn</a> <a href={'https://github.com/amhjo/'}>GitHub</a>
             </div>
         </div>
 
         <div id="arrow">↓</div>
-
-        <CaseHome />
+       
+       <div className="page-con">
+            <CaseHome />
+        </div>
 
         <BackToTop />
 

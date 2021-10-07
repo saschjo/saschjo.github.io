@@ -220,7 +220,13 @@ function InternetskolanContent(props) {
     </div>
 
     <div className="case-text">
-      <h3>MVP and live project</h3>
+      <h3>Result</h3>
+      <p>Internetskolan was lauded by both our client, teachers and classmates alike. We got great feedback on the extent of our research and user testing (despite working 100% remotely), our approach to solving the problem at hand and attention to detail. Our client was extremely happy with the result, and wished to pursue it further by introducing it to their higher-ups. At the end of the project, our client even offered to act as references for the future, and were very interested in having us come back to work with them in the future.</p>
+      <h4>The future of Internetskolan</h4>
+      <p>As we only had access to people outside the specific user group of elderly people living in Spånga-Tensta, performing rigorous user testing with the actual users in mind should be the top priority for any future development of Internetskolan. As we only had time to finish a very hi-fi prototype within the scope of the project, it would also be necessary to further develop classes, the lexicon and link page, as well as optimising the website itself to be responsive. Further user testing with a larger user group would be highly beneficial to the project.
+</p>
+      <h3>What I learned</h3>
+      <p>Through working on this project, I learned a lot more about working with different demographics, the usefulness and necessity of proper user research, and gained more confidence in my UI and web development abilities. Working solely on this project for a whole month was a true joy, and by the end I was so excited about it all I wanted was to keep working on it. Finally, I learned more about working with surveys, data gathering and user testing to create a bespoke, user centered design solution.</p>
     </div>
 
 

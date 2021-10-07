@@ -12,7 +12,7 @@ function Header() {
     <div>
 
         <div className="navigation">
-            <Link to="/" id="website-title" onClick={()=>setShow(false)} > <span id="blinkstar">✧</span> Anna-Maria Hjorth <span id="blinkstar">✧</span> </Link><br></br>
+            <Link to="/" id="website-title" onClick={()=>setShow(false)} > Anna-Maria Hjorth <span id="blinkstar">✧</span> </Link><br></br>
 
             <div className="navigation-sub">
                                             
