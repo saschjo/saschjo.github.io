@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d7ccbec2.chunk.css",
-    "main.js": "/portfolio/static/js/main.5ad9ab64.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5ad9ab64.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7713643c.chunk.css",
+    "main.js": "/portfolio/static/js/main.db240275.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.db240275.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
     "static/js/2.d409db75.chunk.js": "/portfolio/static/js/2.d409db75.chunk.js",
     "static/js/2.d409db75.chunk.js.map": "/portfolio/static/js/2.d409db75.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.d7ccbec2.chunk.css.map": "/portfolio/static/css/main.d7ccbec2.chunk.css.map",
+    "static/css/main.7713643c.chunk.css.map": "/portfolio/static/css/main.7713643c.chunk.css.map",
     "static/js/2.d409db75.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d409db75.chunk.js.LICENSE.txt",
     "static/media/amhjo.f21ca47e.png": "/portfolio/static/media/amhjo.f21ca47e.png",
     "static/media/bjorn.c5b4341a.gif": "/portfolio/static/media/bjorn.c5b4341a.gif",
@@ -34,7 +34,11 @@
     "static/media/internetskolangif.6e3e9e57.gif": "/portfolio/static/media/internetskolangif.6e3e9e57.gif",
     "static/media/kp-sketch.0b00d007.png": "/portfolio/static/media/kp-sketch.0b00d007.png",
     "static/media/legimeeet_thumb.e29129a7.png": "/portfolio/static/media/legimeeet_thumb.e29129a7.png",
-    "static/media/leo.936c3863.png": "/portfolio/static/media/leo.936c3863.png",
+    "static/media/leo_box.5da9dc50.png": "/portfolio/static/media/leo_box.5da9dc50.png",
+    "static/media/leo_karta.d0245beb.png": "/portfolio/static/media/leo_karta.d0245beb.png",
+    "static/media/leo_logos.29c7103c.png": "/portfolio/static/media/leo_logos.29c7103c.png",
+    "static/media/leo_process.6b4079fa.jpg": "/portfolio/static/media/leo_process.6b4079fa.jpg",
+    "static/media/leo_reklam.4ed7b155.jpg": "/portfolio/static/media/leo_reklam.4ed7b155.jpg",
     "static/media/leo_thumb.ffa064b5.png": "/portfolio/static/media/leo_thumb.ffa064b5.png",
     "static/media/me.15cf5e84.jpg": "/portfolio/static/media/me.15cf5e84.jpg",
     "static/media/moodboard-kp.83b10f9e.png": "/portfolio/static/media/moodboard-kp.83b10f9e.png",
@@ -64,7 +68,7 @@
   "entrypoints": [
     "static/js/runtime-main.bcd5af5a.js",
     "static/js/2.d409db75.chunk.js",
-    "static/css/main.d7ccbec2.chunk.css",
-    "static/js/main.5ad9ab64.chunk.js"
+    "static/css/main.7713643c.chunk.css",
+    "static/js/main.db240275.chunk.js"
   ]
 }
