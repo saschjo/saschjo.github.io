@@ -4,6 +4,7 @@ import RemapContent from './RemapContent.js';
 import SwAnimalsContent from './SwAnimalsContent.js';
 import InternetskolanContent from './InternetskolanContent.js';
 import  SustainlabContent  from './SustainlabContent.js';
+import LeoContent from "./LeoContent.js";
  
 function Remap(props) {
 
@@ -99,10 +100,64 @@ function SustainLab(props) {
   )
 
 }
+
+function Legimeet(props) {
+
+  return (
+        // Render a Thumbnail component
+      <div className="container-project">
+        <div className="project-container">
+          <div className="project-1">
+              <ProjectObject
+                  title="Legimeet"
+                  category="✧ Web Development and Graphic Design"
+                  uppdragstyp="Live client project"
+                  mission="Website and light visual identity"
+                  myrole="Project manager, developer and designer"
+                  datum="Fall of 2020 – Spring of 2021"
+                  description="SustainLab-SH is a venture of the Environmental Science Department, Södertörn University. They recruited me and my project partner David Wechana to create a website for them that they would be able to update the site themselves, share their research, as well publish posts. They also needed a logo. We realized this project in Wordpress and Elementor, utilizing user research and testing to validate the project iteratively throughout. The client was very happy with the result, and the website will be easy to expand as needed in the future."
+                />
+
+              <SustainlabContent />
+
+          </div>
+        </div>
+      </div>
+  )
+
+}
+
+function Leo(props) {
+
+  return (
+        // Render a Thumbnail component
+      <div className="container-project">
+        <div className="project-container">
+          <div className="project-1">
+              <ProjectObject
+                  title="Leo;"
+                  category="✧ Product and Graphic Design"
+                  uppdragstyp="School assignment"
+                  mission="Typographic logo and mock-ups"
+                  myrole="Product and Graphic designer"
+                  datum="Fall of 2019"
+                  description="Leo; was the result of one of our first assignments in graphic design. We were tasked with creating a concept, design a typographic logotype and couple it with mock-ups. I created Leo;, an oral birth control aimed at cis men. The inspiration for the product was how women are portrayed in ads for mentrual products, birth control pills as well as my thoughts on what a birth control for men would realistically look like.  While there are a lot of details in the execution that could be improved upon, especially now that I've more knowledge and experience, it's still a project I hold near and dear to my heart, and feel represent a part of me as a designer."
+                />
+
+              <LeoContent />
+
+          </div>
+        </div>
+      </div>
+  )
+
+}
  
 export {
   Remap,
   Internetskolan,
   Codimals,
-  SustainLab
+  SustainLab,
+  Leo,
+  Legimeet
 }

@@ -4,7 +4,6 @@ import Hello from './Hello.js';
 import remap_thumb from './assets/remap_thumb.png';
 import codimals_thumb from './assets/codimals_thumb.png';
 import internetskolan_thumb from './assets/internetskolangif.gif';
-import leo from './assets/leo.png';
 import sustainlab_thumb from './assets/sustainlab/sustainlab_thumb.png';
 import leo_thumb from './assets/leo/leo_thumb.png';
 import legimeet_thumb from './assets/legimeet/legimeeet_thumb.png';
@@ -69,7 +68,7 @@ function Projects(props) {
                     />
 
                     <Thumbnail
-                        link="/Remap"
+                        link="/Legimeet"
                         title="Legimeet"
                         image={legimeet_thumb}
                         desc="UI/UX design and development work for Legimeet, an exciting startup offering easy solutions for digital AGMs."
@@ -77,7 +76,7 @@ function Projects(props) {
                     />
 
                     <Thumbnail
-                        link="/Remap"
+                        link="/Leo"
                         title="Leo;"
                         image={leo_thumb}
                         desc="Product and logo design for an oral contraceptive aimed at cis men, as part of a school assignment on typographic logotypes."

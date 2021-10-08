@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'; 
 import Projects from './components/Projects.js'; 
 import About from './components/About.js';
-import { Remap, Internetskolan, Codimals, SustainLab } from './components/Cases.js';  
+import { Remap, Internetskolan, Codimals, SustainLab, Leo, Legimeet } from './components/Cases.js';  
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './components/Home.js';
@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
     
-        <Header />  {/* Laddar in headern/menyn */}
+        <Header />
 
         <Route exact path="/" component={Home} />
         <Route exact path="/projects" component={Projects} />
@@ -23,6 +23,8 @@ function App() {
         <Route path="/Remap" component={Remap} />
         <Route path="/Internetskolan" component={Internetskolan} />
         <Route path="/Sustainlab" component={SustainLab} />
+        <Route path="/Legimeet" component={Legimeet} />
+        <Route path="/Leo" component={Leo} />
         <Route path="/Codimals" component={Codimals} />
         <Route path="/contact" component={Contact} />
 
