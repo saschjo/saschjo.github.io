@@ -37,7 +37,7 @@ function CaseHome(props) {
                 />
 
                 <Thumbnail
-                    link="/Chrome"
+                    link="/Codimals"
                     image={codimals_thumb}
                     title="Codimals"
                     category="✧ Product, UX/UI Design and Development"

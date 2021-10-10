@@ -30,7 +30,7 @@ function LeoContent(props) {
 
       <div className="case-text">
       <h4>How I did it</h4>
-        <p>At first I was inspired to make an ultra-masculine concept, inspired by the multitude of "For men"-products out there, but ultimately decided it felt too camp and on the nose. I wanted to make a point by making something real. My inspiration became women were being portrayed in ads for mentrual products and in brochures for contraceptives at the time. I always found it very funny how they were so happy about these products, jumping around in the sunshine, laughing with their arms stretched to the sky. That felt very far removed from reality, at least to me. For the name, I played around with different Greek words relating to love and sexuality, but settled on Leo as it felt both neutral, warm and kind.</p>
+        <p>At first I was inspired to make an ultra-masculine concept, inspired by the multitude of "For men"-products out there, but ultimately decided it felt too camp and on the nose. I wanted to make a point by making something real. My inspiration became how women were being portrayed in ads for mentrual products and in brochures for contraceptives at the time. I always found it very funny how they were so happy about these products, jumping around in the sunshine, laughing with their arms stretched to the sky. That felt very far removed from reality, at least to me. For the name, I played around with different Greek words relating to love and sexuality, but settled on Leo as it felt both neutral, warm and kind.</p>
       </div>
 
       <FullImage 
