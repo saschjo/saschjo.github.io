@@ -29,7 +29,7 @@ function InternetskolanContent(props) {
       caption="Front page of the launched hi-fi prototype."
       />
 
-<div className="visit-case-subject">
+      <div className="visit-case-subject">
         <a href={'https://amhjo.github.io/internetskolan/'}>Experience Internetskolan here</a>
       </div>
 

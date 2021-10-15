@@ -42,6 +42,7 @@ body {
 
 .fas.fa-bars {
   display: none;
+  position: relative;
   font-size: 22px;
 }
 
@@ -995,7 +996,7 @@ h1 {
 }
 
 /* Large display */
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1950px) {
 
   .navigation {
     .navigation-sub {
@@ -1005,7 +1006,7 @@ h1 {
 
   .frontpage-orbs {
     margin-left: 2%;
-    width: 98vw;
+    width: 96vw;
   }
 
   .welcome-window {
@@ -1516,7 +1517,7 @@ h1 {
     }
   }
   .welcome-window {
-    
+    height: 17em;
     .frontpage {
       h1 {
         font-size: 30px;
@@ -1562,8 +1563,12 @@ h1 {
 //Mobiler
 @media only screen and (max-width: 550px) {
 
+  #upper-home {
+    height: 75vh;
+  }
+
   .welcome-window {
-    height: 53%;
+    height: 19em;
     width: 85%;
   }
     //Fixa rubrik framsida sen
@@ -1610,12 +1615,12 @@ h1 {
 
   .frontpage-links {
     h1 {
-    font-size: 14px;
+    font-size: 16px;
     }
 
     a {
-      font-size: 18px;
-      padding-right: 3%;
+      font-size: 20px;
+      padding-right: 6%;
     }
   }
 
@@ -1697,7 +1702,7 @@ h1 {
 @media only screen and (max-width: 450px) {
 
   .welcome-window {
-    height: 58%;
+    height: 22em;
     margin-top: 15%;
 
     h1 {

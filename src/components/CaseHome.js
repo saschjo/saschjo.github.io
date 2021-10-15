@@ -1,6 +1,5 @@
 import React from "react"
 import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
-import amhjo from './assets/amhjo.png';
 import Hello from './Hello.js';
 import remap_thumb from './assets/remap_thumb.png';
 import codimals_thumb from './assets/codimals_thumb.png';

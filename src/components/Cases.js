@@ -3,7 +3,8 @@ import ProjectObject from './portfolio-object.js';
 import RemapContent from './RemapContent.js';
 import SwAnimalsContent from './SwAnimalsContent.js';
 import InternetskolanContent from './InternetskolanContent.js';
-import  SustainlabContent  from './SustainlabContent.js';
+import SustainlabContent  from './SustainlabContent.js';
+import LegimeetContent from './LegimeetContent.js';
 import LeoContent from "./LeoContent.js";
  
 function Remap(props) {
@@ -110,15 +111,15 @@ function Legimeet(props) {
           <div className="project-1">
               <ProjectObject
                   title="Legimeet"
-                  category="✧ Web Development and Graphic Design"
-                  uppdragstyp="Live client project"
-                  mission="Website and light visual identity"
-                  myrole="Project manager, developer and designer"
-                  datum="Fall of 2020 – Spring of 2021"
-                  description="SustainLab-SH is a venture of the Environmental Science Department, Södertörn University. They recruited me and my project partner David Wechana to create a website for them that they would be able to update the site themselves, share their research, as well publish posts. They also needed a logo. We realized this project in Wordpress and Elementor, utilizing user research and testing to validate the project iteratively throughout. The client was very happy with the result, and the website will be easy to expand as needed in the future."
+                  category="✧ UX/UI Design and Development"
+                  uppdragstyp="Freelance"
+                  mission="UX/UI Development and design"
+                  myrole="UX/UI Developer and designer"
+                  datum="Feb. 2021 – Sept. 2021"
+                  description="Legimeet is an exciting startup company offering to build, host and send live digital AGMs through the Twebcast platform. The design is produced through CSS, HTML and JS. I was brought in to work on UX/UI development and design for a series of projects, which allowed me to combine my skills as a designer and developer at the same time. I occasionally also produced graphic material for the company."
                 />
 
-              <SustainlabContent />
+              <LegimeetContent />
 
           </div>
         </div>
