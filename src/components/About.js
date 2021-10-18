@@ -34,10 +34,10 @@ function About(props) {
             <div className="row-about">
               <div className="column-1">
                 <p><strong>I'm a 26 year old designer and developer soon to receive my Bachelor of Science in Media Technology at the ICT, Media and design programme at Södertörn University. I’ve been freelancing in web and UX/UI development since late 2019, and worked with clients in fields ranging from environmental research to digital AGMs and parenting courses.</strong></p>
-                <p>I'm interested in opportunities where I can combine my skills as a designer and developer to create great design solutions and make a differene, but I'm no stranger to pure design work either. I always bring a user centred focus with a holistic perspective to the table, while still remaining attuned to the business oriented goals of the client. What matters most to me is creating something that makes a positive change in people's lives. In my spare time, I enjoy playing videogames, drawing and coding exciting things – like this website, for instance!</p>
+                <p>I'm interested in opportunities where I can combine my skills as a designer and developer to create great design solutions and make a difference, but I'm no stranger to pure design work either. I always bring a user centred focus with a holistic perspective to the table, while still remaining attuned to the business oriented goals of the client. What matters most to me is creating something great that makes a positive change in people's lives. In my spare time, I enjoy playing videogames, D&D, drawing and coding exciting things – like this website, for instance!</p>
                 <br></br>
-                <p><strong>If you want to see more of me, check out these links:</strong></p>
-                <p> <a href={'http://instagram.com/amhjo.design'}>Instagram</a> <a href={'https://www.linkedin.com/in/anna-maria-hjorth-48bb327a/'}>LinkedIn</a> <a href={'https://github.com/amhjo/'}>GitHub</a> </p>
+                <p class="see-more">If you want to see more of me, check out these links:</p>
+                <p> <a href={'http://instagram.com/amhjo.design'}>✧ Instagram</a> <a href={'https://www.linkedin.com/in/anna-maria-hjorth-48bb327a/'}>✧ LinkedIn</a> <a href={'https://github.com/amhjo/'}>✧ GitHub</a> </p>
               </div>
 
               <div className="column-2">

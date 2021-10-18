@@ -10,7 +10,7 @@ function PortfolioObject(props) {
     return (
       <div className="portfolio-object">
           <div class="object-header">
-            <div className="object-title">{props.title} ✧</div>
+            <div className="object-title">{props.title} <span class="title-star">✦</span></div>
               <div class="row">
                 <div class="column1">
                   <div className="solidborderbox">

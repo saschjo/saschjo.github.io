@@ -219,7 +219,7 @@ a:hover {
 
 #me, #designer, #developer, #personality, #welcome {
   animation-name: example;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -282,7 +282,7 @@ a:hover {
   animation-name: fadeinLess;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-delay: 5.5s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
   opacity: 0;
 
@@ -299,8 +299,8 @@ a:hover {
   a {
     font-weight: 300;
     font-size: 20px;
-    padding-right: 3%;
-    color: var(--accent-dark);
+    padding-right: 2%;
+    color: var(--accent-light);
     transition: 0.2s;
   }
 
@@ -325,7 +325,7 @@ a:hover {
 
   h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--text);
     font-weight: 300;
 
@@ -333,7 +333,15 @@ a:hover {
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    line-height: 2em;
+    padding: 0;
     opacity: 0;
+  }
+
+  #contact-name {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--accent);
   }
 }
 
@@ -433,8 +441,8 @@ a:hover {
 }
 
 .object-short-description {
-  font-size: 16px;
-  line-height: 1.4em;
+  font-size: 14px;
+  line-height: 1.5em;
 }
 
 .minor-thumbnail {
@@ -624,17 +632,27 @@ a:hover {
     font-weight: 400;
   }
 
+  .see-more {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -1%;
+  }
+
   a {
     font-weight: 400;
-    padding-right: 3%;
-    font-size: 20px;
-    color: var(--accent-light);
+    padding-top: 0;
+    margin: 0;
+    padding-right: 2.5%;
+    font-size: 17px;
+    color: var(--accent);
     transition: 0.2s ease;
-    text-decoration: underline;
   }
 
   a:hover {
-    color: var(--accent);
+    color: var(--accent-dark);
   }
 }
 
@@ -732,6 +750,10 @@ h1 {
   font-weight: 300;
   font-size: 38px;
   margin-bottom: 1%;
+
+  .title-star {
+    color: var(--accent);
+  }
 }
 
 .portfolio-object {
@@ -754,7 +776,9 @@ h1 {
   h3 {
     display: inline-block;
     margin: 0;
-    font-weight: 300;
+    font-family: degular;
+    text-transform: uppercase;
+    font-weight: 600;
     font-size: 15px;
     color: var(--text);
   }
@@ -800,7 +824,7 @@ h1 {
 
 .column1 {
   display: flex;
-  flex: 35%;
+  flex: 40%;
   line-height: 1.3em;
   justify-content: space-between;
   flex-direction: column;
@@ -910,7 +934,7 @@ h1 {
     padding: 0.6em;
     border: 1px solid var(--text);
     border-radius: 30px;
-    margin-top: 2%;
+    margin: 2% 0 2% 0;
   }
 
   .BackToTop:hover {
@@ -1563,6 +1587,10 @@ h1 {
 //Mobiler
 @media only screen and (max-width: 550px) {
 
+  .object-header {
+    margin-bottom: 20%;
+  }
+
   #upper-home {
     height: 75vh;
   }
@@ -1649,7 +1677,7 @@ h1 {
 
   .container-project {
     .object-title {
-      font-size: 28px;
+      font-size: 32px;
       padding-bottom: 1%;
     }
 
@@ -1679,6 +1707,27 @@ h1 {
 
   }
 
+  .fullImage 
+    img {
+    width: 100%;
+    -moz-transform: scale(1.12, 1.12);
+    -webkit-transform: scale(1.12, 1.12);
+    -ms-transform: scale(1.12, 1.12);
+    -o-transform: scale(1.12, 1.12);
+    transform: scale(1.12, 1.12);
+    object-fit: cover;
+  }
+
+  .fullImage .img-caption {
+    padding: 5% 0 3% 0;
+    font-size: 12.5px;
+    -moz-transform: translateX(-3.5%);
+    -webkit-transform: translateX(-3.5%);
+    -ms-transform: translateX(-3.5%);
+    -o-transform: translateX(-3.5%);
+    transform: translateX(-3.5%);
+  }
+
   //About
   .row-about {
 
@@ -1692,6 +1741,20 @@ h1 {
     .column-2 {
       img {
         width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    .footer-con {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4%;
+
+      p {
+        padding: 0;
+        margin: 1.5%;
       }
     }
   }
