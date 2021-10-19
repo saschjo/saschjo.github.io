@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b63a1a39.chunk.css",
-    "main.js": "/static/js/main.6a885a26.chunk.js",
-    "main.js.map": "/static/js/main.6a885a26.chunk.js.map",
+    "main.js": "/static/js/main.2b2f29e0.chunk.js",
+    "main.js.map": "/static/js/main.2b2f29e0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
     "static/js/2.48efdfcd.chunk.js": "/static/js/2.48efdfcd.chunk.js",
@@ -33,7 +33,8 @@
     "static/media/internetskolangif.6e3e9e57.gif": "/static/media/internetskolangif.6e3e9e57.gif",
     "static/media/kp-sketch.0b00d007.png": "/static/media/kp-sketch.0b00d007.png",
     "static/media/legimeeet_thumb.e29129a7.png": "/static/media/legimeeet_thumb.e29129a7.png",
-    "static/media/legimeet_vote2.765c5a19.gif": "/static/media/legimeet_vote2.765c5a19.gif",
+    "static/media/legimeet_example.25a6c7b1.jpg": "/static/media/legimeet_example.25a6c7b1.jpg",
+    "static/media/legimeet_vote.05092ecd.gif": "/static/media/legimeet_vote.05092ecd.gif",
     "static/media/leo_box.5da9dc50.png": "/static/media/leo_box.5da9dc50.png",
     "static/media/leo_karta.d0245beb.png": "/static/media/leo_karta.d0245beb.png",
     "static/media/leo_logos.29c7103c.png": "/static/media/leo_logos.29c7103c.png",
@@ -69,6 +70,6 @@
     "static/js/runtime-main.5ebc510a.js",
     "static/js/2.48efdfcd.chunk.js",
     "static/css/main.b63a1a39.chunk.css",
-    "static/js/main.6a885a26.chunk.js"
+    "static/js/main.2b2f29e0.chunk.js"
   ]
 }
