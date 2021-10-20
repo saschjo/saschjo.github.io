@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.62e50b50.chunk.css",
-    "main.js": "/static/js/main.cecfd4f3.chunk.js",
-    "main.js.map": "/static/js/main.cecfd4f3.chunk.js.map",
+    "main.css": "/static/css/main.57aacd63.chunk.css",
+    "main.js": "/static/js/main.e3e883d7.chunk.js",
+    "main.js.map": "/static/js/main.e3e883d7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
     "static/js/2.48efdfcd.chunk.js": "/static/js/2.48efdfcd.chunk.js",
     "static/js/2.48efdfcd.chunk.js.map": "/static/js/2.48efdfcd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.62e50b50.chunk.css.map": "/static/css/main.62e50b50.chunk.css.map",
+    "static/css/main.57aacd63.chunk.css.map": "/static/css/main.57aacd63.chunk.css.map",
     "static/js/2.48efdfcd.chunk.js.LICENSE.txt": "/static/js/2.48efdfcd.chunk.js.LICENSE.txt",
     "static/media/bjorn.c5b4341a.gif": "/static/media/bjorn.c5b4341a.gif",
     "static/media/codimals_thumb.c09313ad.png": "/static/media/codimals_thumb.c09313ad.png",
@@ -70,7 +70,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ebc510a.js",
     "static/js/2.48efdfcd.chunk.js",
-    "static/css/main.62e50b50.chunk.css",
-    "static/js/main.cecfd4f3.chunk.js"
+    "static/css/main.57aacd63.chunk.css",
+    "static/js/main.e3e883d7.chunk.js"
   ]
 }
