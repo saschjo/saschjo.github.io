@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom'; 
 import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
 import Hello from './Hello.js';
 import remap_thumb from './assets/remap_thumb.png';
@@ -8,12 +9,14 @@ import internetskolan_thumb from './assets/internetskolangif.gif';
 function CaseHome(props) {
 
   return (
-        // Render a Thumbnail component
+        
         <div>
-        <Hello 
-        headlineContent="Case studies"
-        subHeadline="A selection of projects I've been a part of through 2019–2021."
-        />
+            <Link to="/projects">
+                <Hello 
+                headlineContent="Case studies"
+                subHeadline="A selection of projects I've been a part of through 2019–2021."
+                />
+            </Link>
 
         <div className="PageWrapper">
         <div class="projects-container">
@@ -24,7 +27,7 @@ function CaseHome(props) {
                     title="Re:map"
                     image={remap_thumb}
                     desc="Design concept, graphic identity and animation for a project aimed at inspiring teens to get involved in urban development."
-                    category="✧ Product and Graphic Design"
+                    category="✧ Graphic and Product Design"
                 />
 
                 <Thumbnail

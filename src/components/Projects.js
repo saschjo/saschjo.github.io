@@ -28,7 +28,7 @@ function Projects(props) {
                         title="Re:map"
                         image={remap_thumb}
                         desc="Design concept, graphic identity and animation for a project aimed at inspiring teens to get involved in urban development."
-                        category="✧ Product and Graphic Design"
+                        category="✧ Graphic and Product Design"
                     />
 
                     <Thumbnail

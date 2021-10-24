@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
+$background: rgb(12, 12, 12);;
+$text: rgb(250, 250, 250);
+$accent: rgb(250, 219, 81);
+$accent-dark: rgb(189, 189, 189);
+$accent-light: rgb(207, 207, 207);
+
 html {
   --bakgrund: rgb(12, 12, 12);
   --text: rgb(250, 250, 250);
@@ -13,8 +19,8 @@ html {
 
 /*CSS START*/
 body {
-  background: var(--bakgrund); 
-  color: var(--text);
+  background: $background; 
+  color: $text;
   font-family:  degular, sans-serif; 
   margin: 0;
   min-height: 100%;
@@ -37,7 +43,7 @@ body {
   justify-content: space-between;
   vertical-align: baseline;
   z-index: 100;
-  background-color: var(--bakgrund);
+  background-color: $background;
 }
 
 .fas.fa-bars {
@@ -55,7 +61,7 @@ body {
 #website-title {
   text-transform: uppercase;
   width: 20%;
-  color: var(--text);
+  color: $text;
   display: inline;
   font-size:  14px;
   font-family: gopher, sans-serif;
@@ -87,7 +93,7 @@ body {
     transition: 0.2s;
     font-weight: 500;
     padding: 0 0 2% 0;
-    color: var(--text);
+    color: $text;
   }
 
   input {
@@ -98,12 +104,12 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text);
+  color: $text;
   font-weight: 600;
 }
 
 a:hover {
-  color: var(--accent);
+  color: $accent;
 }
 
 /* Blue orb*/
@@ -164,7 +170,7 @@ a:hover {
 
 #arrow {
   text-align: center;
-  color: var(--accent-light);
+  color: $accent-light;
   animation: bounce 2s infinite ease-in-out;
   font-size: 20px;
 }
@@ -291,7 +297,7 @@ a:hover {
     text-align: left;
     font-size: 16px;
     font-weight: 700;
-    color: var(--text);
+    color: $text;
     text-transform: uppercase;
     letter-spacing: 2px;
   }
@@ -299,13 +305,13 @@ a:hover {
   a {
     font-weight: 300;
     font-size: 20px;
-    padding-right: 2%;
-    color: var(--accent-light);
+    padding-right: 1.8%;
+    color: $accent-light;
     transition: 0.2s;
   }
 
   a:hover {
-    color: var(--accent);
+    color: $accent;
   }
 }
 
@@ -326,7 +332,7 @@ a:hover {
   h1 {
     text-align: center;
     font-size: 20px;
-    color: var(--text);
+    color: $text;
     font-weight: 300;
 
     animation-name: fadeinLess;
@@ -341,7 +347,7 @@ a:hover {
   #contact-name {
     font-size: 28px;
     text-transform: uppercase;
-    color: var(--accent);
+    color: $accent;
   }
 }
 
@@ -354,10 +360,10 @@ a:hover {
   bottom: -5em;
   left: 0;
   width: 100%;
-  color: var(--bakgrund);
+  color: $background;
   border-top: solid;
   border-width: 1px;
-  border-color: var(--text);
+  border-color: $text;
 }
 
 .footer-con {
@@ -367,7 +373,7 @@ a:hover {
   padding-top: 1%;
   overflow: hidden;
   font-size: 12px;
-  color: var(--text);
+  color: $text;
 }
 
 /* PROJECT PAGE */
@@ -389,7 +395,7 @@ a:hover {
   }
 
   :hover * {
-    color: var(--accent);
+    color: $accent;
   }
 
 }
@@ -415,7 +421,7 @@ a:hover {
 .project-category {
   font-size: 14px;
   font-weight: 500;
-  color: var(--text);
+  color: $text;
   margin-top: 3%;
   display: inline-block;
   border-radius: 10px;
@@ -426,7 +432,7 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4em;
-  color: var(--accent-light);
+  color: $accent-light;
 }
 
 .project-title, .project-category, .project-desc {
@@ -447,10 +453,10 @@ a:hover {
 
 .minor-thumbnail {
   max-width: 28%;
-  background: var(--bakgrund); //
+  background: $background; //
   padding: 1%;
   border-radius: 20px 20px 0px 0px;
-  border-bottom: solid 10px var(--accent-light);
+  border-bottom: solid 10px $accent-light;
   background-size: 200% 200%;
   //animation: Animation 5s ease infinite;
   /* Neu */
@@ -465,7 +471,7 @@ a:hover {
   justify-content: center;
 
   .img-caption {
-    color: var(--accent-dark);
+    color: $accent-dark;
     font-size: 15px;
     line-height: 1.5em;
     padding: 0.5%;
@@ -485,12 +491,12 @@ a:hover {
     font-size: 18px;
     line-height: 1.5em;
     margin-top: 6%;
-    color: var(--accent-light)
+    color: $accent-light
   }
 
   h3 {
     font-family: gopher;
-    color: var(--text);
+    color: $text;
     font-size: 25px;
     padding: 0;
     font-weight: 500;
@@ -499,7 +505,7 @@ a:hover {
 
   h4 {
     font-family: degular;
-    color: var(--text);
+    color: $text;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 20px;
@@ -513,7 +519,7 @@ a:hover {
   }
 
   a:hover {
-    color: var(--accent);
+    color: $accent;
   }
 
   .bigwords {
@@ -521,12 +527,12 @@ a:hover {
     line-height: 1.5em;
     font-family: gopher;
     font-weight: 300;
-    color: var(--text);
+    color: $text;
     font-size: 26px;
   }
 
   .bigwords-caption {
-    color: var(--accent);
+    color: $accent;
     font-size: 15px;
     padding: 2% 0 2% 0%;
   }
@@ -550,20 +556,31 @@ a:hover {
   margin: 3%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   a {
     padding: 1.5%;
-    border: 1px solid var(--text);
+    border: 1px solid $text;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 16px;
     transition: 0.3s ease;
     font-weight: 300;
-    font-family: gopher;
+    font-family: degular;
+    text-transform: uppercase;
+    display: block;
     }
   
     a:hover {
-    color: var(--accent);
-    border-color: var(--accent);
+    color: $accent;
+    border-color: $accent;
+    }
+
+    p {
+      display: block;
+      margin-top: 2%;
+      font-size: 14px;
+      color: $accent-light;
     }
   
 } 
@@ -586,7 +603,7 @@ a:hover {
 }
 
 .border {
-  border: solid var(--accent-dark);
+  border: solid $accent-dark;
   border-width: 0px 1px 0px 1px;
   margin: 0 20% -8% 20%;
 }
@@ -615,7 +632,7 @@ a:hover {
 
   p {
     font-size: 18px;
-    color: var(--accent-light);
+    color: $accent-light;
     line-height: 1.5em;
     padding: 0 0 3% 0;
     margin: 0;
@@ -627,7 +644,7 @@ a:hover {
   line-height: 1.5em;
 
   strong {
-    color: var(--text);
+    color: $text;
     font-size: 20px;
     font-weight: 400;
   }
@@ -635,24 +652,29 @@ a:hover {
   .see-more {
     font-size: 16px;
     font-weight: 700;
-    color: var(--text);
+    color: $text;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: -1%;
+    margin-bottom: 0%;
   }
 
   a {
     font-weight: 400;
+    text-transform: uppercase;
     padding-top: 0;
     margin: 0;
-    padding-right: 2.5%;
-    font-size: 17px;
-    color: var(--accent);
+    padding: 0.8% 1.5% 1.2% 1.5%;
+    margin-right: 2%;
+    border-radius: 18px;
+    border: 1px solid $text;
+    font-size: 14px;
+    color: $text;
     transition: 0.2s ease;
   }
 
   a:hover {
-    color: var(--accent-dark);
+    color: $accent;
+    border: 1px solid $accent;
   }
 }
 
@@ -660,6 +682,12 @@ a:hover {
   display: flex;
   width: 40%;
   flex-direction: column;
+
+  .column-2-factcon {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
 
   img {
     object-fit: cover;
@@ -676,7 +704,8 @@ a:hover {
   button {
     margin: 5% 0 2% 0;
     background: none;
-    color: var(--text);
+    text-align: left;
+    color: $text;
     padding: 0;
     font-weight: 500;
     border: none;
@@ -685,7 +714,7 @@ a:hover {
   }
 
   button:hover {
-    color: var(--accent);
+    color: $accent;
   }
 
   .factoid {
@@ -697,7 +726,7 @@ h1, h3, h2 {
   text-align: left;
   font-family: gopher, sans-serif;
   font-weight: 500;
-  color: var(--accent-dark);
+  color: $accent-dark;
 }
 
 h2, h3 {
@@ -705,7 +734,7 @@ h2, h3 {
 }
 
 h1 {
-  color: var(--accent-light);
+  color: $accent-light;
   font-size: 20px;
   padding-bottom: 1%;
   margin: 0;
@@ -746,13 +775,13 @@ h1 {
 
 .object-title {
   font-family: gopher, sans-serif;
-  color: var(--text);
+  color: $text;
   font-weight: 300;
   font-size: 38px;
   margin-bottom: 1%;
 
   .title-star {
-    color: var(--accent);
+    color: $accent;
   }
 }
 
@@ -780,7 +809,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
-    color: var(--text);
+    color: $text;
   }
 }
 
@@ -816,7 +845,7 @@ h1 {
 
 .row {
   display: flex;
-  color: var(--text);
+  color: $text;
   flex-direction: row;
   flex-wrap: nowrap;
   column-gap: 5%;
@@ -832,7 +861,7 @@ h1 {
 
 
   .solidborderbox {
-    border: solid 1px var(--accent-dark);
+    border: solid 1px $accent-dark;
     box-sizing: border-box;
     border-radius: 8px;
     padding: 4%;
@@ -851,7 +880,7 @@ h1 {
 }
 
 .category {
-  color: var(--accent-dark);
+  color: $accent-dark;
   margin-top: 4%;
   font-size: 14px;
 }
@@ -883,7 +912,7 @@ h1 {
     font-size: 32px;
     font-weight: 300;
     line-height: 1.4em;
-    color: var(--text);
+    color: $text;
   }
 
   h2 {
@@ -901,7 +930,7 @@ h1 {
 }
 
 .Subheader {
-  background: var(--bakgrund);
+  background: $background;
   padding: 5%;
   margin: 8.5% 0 6.5% 0;
   border-radius: 10px;
@@ -929,17 +958,17 @@ h1 {
   .BackToTop {
     text-transform: uppercase;
     font-weight: 300;
-    color: var(--text);
+    color: $text;
     transition: 0.3s ease-in-out;
     padding: 0.6em;
-    border: 1px solid var(--text);
+    border: 1px solid $text;
     border-radius: 30px;
     margin: 2% 0 2% 0;
   }
 
   .BackToTop:hover {
-    color: var(--accent);
-    border-color: var(--accent);
+    color: $accent;
+    border-color: $accent;
   }
   
 }
@@ -1189,7 +1218,7 @@ h1 {
     height: 12vh;
     padding-bottom: 5%;
     background-color: #0c0c0c;
-    border-bottom: 1px solid var(--text);
+    border-bottom: 1px solid $text;
     z-index: 200;
     animation-name: mobMAnimation;
     animation-duration: 0.4s;
@@ -1488,7 +1517,11 @@ h1 {
     .column-2  {
       width: 100%;
       text-align: center;
-      
+      margin-bottom: 5%;
+
+      button {
+        text-align: center;
+      }
 
       img {
         float: none;
@@ -1496,7 +1529,6 @@ h1 {
         margin-left: auto;
         margin-right: auto;
         width: 60%;
-        margin-bottom: 5%;
         margin-top: 3%;
       }
     }

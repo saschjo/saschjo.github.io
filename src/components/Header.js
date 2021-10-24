@@ -15,8 +15,8 @@ function Header() {
 
             <div className="navigation-sub">
                                             
-            <Link to="/projects" className="item">Case / Projects</Link>
-            <Link to="/about" className="item">About</Link>
+            <Link to="/projects" className="item">Portfolio</Link>
+            <Link to="/about" className="item">About me</Link>
             <Link to="/contact" className="item">Contact</Link>
 
             <i class="fas fa-bars" style={{ color: show? 'rgb(250, 219, 81)' : 'rgb(250, 250, 250)' }} onClick={()=>setShow(!show)} ></i> {/* Gör tvärtemot vad än show har för värde */}
