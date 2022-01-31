@@ -12,7 +12,7 @@ function About(props) {
       return Math.floor(Math.random() * (max - min + 1) + min)
     }
 
-    const factArray = ["I LOVE to sing karaoke", "I've been a scout since I was 8 :')", "I drew a LOT of manga when I was little", "I've spent approximately 100h on Dark Souls lore videos", "I change my hair all the time", "I love playing Dungeons & Dragons", "My favorite TV show is Flight of the Concords or Arrested Development", "I prefer to read nonfiction", "My planner is my 7th horocrux", "I'm 1/8 Russian but I can only drink two beers", "I'm vegetarian, but my favorite food is bouf tartar", "I've been to Japan and Korea and I want to go back NOW", "I was an exchange student in Silicon Valley when I was 16!", "I paint and draw a lot in my spare time", "I have a main coon named Junior", "I was a minor celebrity on Habbo Hotel", "I'm allergic to chocolate"];
+    const factArray = ["I LOVE to sing karaoke", "I've been a scout since I was 8 :')", "I drew a LOT of manga when I was little", "I've spent approximately +100h on video game lore videos", "I change my hair all the time", "I love playing Dungeons & Dragons", "My favorite TV show is Flight of the Concords or Arrested Development", "I prefer to read nonfiction.", "My planner is my 7th horocrux", "I'm 1/8 Russian but I can only drink two beers", "I was an exchange student in Silicon Valley when I was 16!", "I paint and draw a lot in my spare time", "I have a cat named Junior<3", "I first learned how to code on stallet.se", "I'm allergic to chocolate"];
 
     const lastIndex = factArray.length - 1
 
@@ -33,12 +33,12 @@ function About(props) {
 
             <div className="row-about">
               <div className="column-1">
-                <p><strong>Hi! I'm Anna-Maria. I'm a 26 year old designer and developer soon to receive my Bachelor of Science in Media Technology at the ICT, Media and design program at Södertörn University. I’ve been freelancing as a digital designer since late 2019, and worked in development roles for clients in fields ranging from environmental research to digital AGMs and parenting courses.</strong></p>
-                <p>I'm interested in opportunities where I can combine my skills as a designer and developer to create great, sustainable design solutions and make a difference. I bring a user centred focus with a holistic perspective to the table, while still remaining attuned to the business oriented goals of the client. What matters most to me is creating something great that makes a positive change in people's lives, and makes the world a better place.</p> 
-                <p>In my spare time, I enjoy playing videogames, TTRPGs, drawing and programming – like this website, for instance, which is made with React.js and SASS.</p>
+                <p><strong>Hello there! I'm Anna-Maria. I'm a 26 year old passionate UX/UI designer and developer. I've been freelancing since late 2019, and am currently wrapping up the final semester of my college degree. Combining my skills in UX/UI design and web development, I'm able to move freely between planning with the team, creating a design and implementing it through code. I'll be available for full time work opportunities starting June 2022. </strong></p>
+                <p>I have experience developing using HTML, CSS, JS, React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart and Flutter, as well as Wordpress and Webflow. I comfortable use and navigate Figma, Adobe XD, and InVision Studio, as well as the Adobe Creative Suite. I work with a holistic and user centered mindset to achieve the client's goals through team work, design thinking and agile workflows. I enjoy team work, creative work environments and am a natural problem solver.</p>
+                <p>In my spare time, I enjoy spending time with friends, playing video games, Dungeons and Dragons, painting and programming – like this website, for instance, which is made with React.js and SASS.</p>
                 <br></br>
                 <p class="see-more">If you want to see more of me, check out these links:</p>
-                <p> <a href={'http://instagram.com/amhjo.design'}>Instagram</a> <a href={'https://www.linkedin.com/in/anna-maria-hjorth-48bb327a/'}>LinkedIn</a> <a href={'https://github.com/amhjo/'}>GitHub</a> </p>
+                <p> <a href={'https://www.linkedin.com/in/anna-maria-hjorth-48bb327a/'}>LinkedIn</a> <a href={'http://instagram.com/amhjo.design'}>Design Instagram</a> <a href={'https://github.com/amhjo/'}>GitHub</a> </p>
               </div>
 
               <div className="column-2">
