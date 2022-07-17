@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
-$background: rgb(12, 12, 12);;
+$background: rgb(12, 12, 12);
 $text: rgb(250, 250, 250);
-$accent: rgb(250, 219, 81);
-$accent-dark: rgb(189, 189, 189);
+$accent: rgb(238, 212, 94);
+$accent-dark: rgb(179, 179, 179);
 $accent-light: rgb(207, 207, 207);
 
 html {
@@ -30,26 +30,43 @@ body {
 .App {
   text-align: left;
   font-family:  degular, sans-serif;
-  margin: 0;
   height: 100%;
 }
 
 
 /*Navbar*/
 .navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  min-width: 100vw;
+  vertical-align: middle;
   text-align: left;
-  padding: 1.5% 10% 1% 10%;
+  padding: 1.8% 10% 1% 10%;
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
-  z-index: 100;
-  background-color: $background;
+  z-index: 1000;
+  background: linear-gradient($background, rgb(255, 255, 255, 0));
+}
+
+.spacing {
+  //background-color: red;
+  width: 100%;
+  height: 3.5em;
 }
 
 .fas.fa-bars {
   display: none;
   position: relative;
-  font-size: 22px;
+  font-size: 25px;
+  padding: 2%;
+}
+
+.fas.fa-chevron-right {
+  font-size: 15px;
+  padding-left: 6.5%;
 }
 
 .mobileMenue {
@@ -63,7 +80,7 @@ body {
   width: 20%;
   color: $text;
   display: inline;
-  font-size:  14px;
+  font-size:  15px;
   font-family: gopher, sans-serif;
   font-weight: 300;
   z-index: 300;
@@ -73,6 +90,7 @@ body {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     opacity: 0;
+    color: $accent;
   }
 }
 
@@ -80,20 +98,38 @@ body {
 
 /* NAVIGATION */
 .navigation-sub {
-  min-width: 18%;
+  min-width: 24%;
   display: flex;
   justify-content: space-between;
+  gap: 5%;
   padding: 0;
-  margin: 0;
+  margin-top: -8px;
 
   a {
     text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
     text-align: right;
-    font-size: 15px;
+    font-size: 14px;
     transition: 0.2s;
     font-weight: 500;
-    padding: 0 0 2% 0;
+    padding: 1.5% 5% 2% 5%;
     color: $text;
+    background-color: rgb(42, 42, 42);
+    //border: 1px solid $text;
+    border-radius: 18px;
+  }
+
+  a:hover {
+    color: $background;
+    background-color: $accent;
+    //border: 1px solid $accent;
+  }
+
+  a.active {
+    color: $background;
+    background-color: $accent;
+    //border: 1px solid $accent;
   }
 
   input {
@@ -121,8 +157,10 @@ a:hover {
   height: 30%;
   width: 100vw;
 
-  animation-name: fadeInOpOnly;
-  animation-duration: 7s;
+  animation-name: fadeInOrbs;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -191,10 +229,10 @@ a:hover {
 /*FRONT PAGE WINDOW-THING*/
 .welcome-window {
   height: 50%;
-  width: 70%;
-  margin: 9% 0 0 15%;
+  width: 100%;
+  margin: 10% 0% 0% 0%;
   padding: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .upper-border {
@@ -218,36 +256,36 @@ a:hover {
 .frontpage h1, #blinkis {
   font-family: Gopher; //'Anonymous Pro', monospace;
   font-weight: 300;
-  text-align: left;
-  font-size: 40px;
-  color: rgb(171, 235, 111);
+  text-align: center;
+  font-size: 45px;
+  color: $text;
 }
 
 #me, #designer, #developer, #personality, #welcome {
   animation-name: example;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
 #designer {
-  animation-delay: 1s;
-  color:rgb(245, 132, 132);
+  animation-delay: 0.8s;
+  color: $accent;
 }
 
 #developer {
-  animation-delay: 2s;
-  color: rgb(243, 213, 113);
+  animation-delay: calc(0.8s * 2);
+  color: $accent;
 }
 
 #personality {
-  animation-delay: 3s;
-  color: rgb(142, 228, 231);
+  animation-delay: calc(0.8s * 3);
+  color: $accent;
 }
 
 #welcome, #blink {
-  animation-delay: 4s;
+  animation-delay: calc(0.8s * 4);
 }
 
 #blinkis {
@@ -262,6 +300,11 @@ a:hover {
     transform: translateY(100%);
     opacity: 0;
   }
+
+  80%   {
+    transform: translateY(-2%);
+  }
+
   100% {
     transform: translateY(0%);
     opacity: 1;
@@ -283,18 +326,18 @@ a:hover {
 }
 
 .frontpage-links {
-  margin: 4% 0 0 15%;
-  text-align: left;
+  margin: 4% 0 0 0%;
+  text-align: center;
   animation-name: fadeinLess;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-delay: 5s;
+  animation-delay: calc(0.8s * 5.5);
   animation-fill-mode: forwards;
   opacity: 0;
 
   h1 {
     font-family: degular;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
     font-weight: 700;
     color: $text;
@@ -303,15 +346,19 @@ a:hover {
   }
 
   a {
+    min-width: 6.5%;
+    display: inline-block;
     font-weight: 300;
     font-size: 20px;
-    padding-right: 1.8%;
+    padding: 0.8%;
     color: $accent-light;
     transition: 0.2s;
   }
 
   a:hover {
     color: $accent;
+    transform: translateY(-2%);
+    transition: ease 0.5s;
   }
 }
 
@@ -347,7 +394,7 @@ a:hover {
   #contact-name {
     font-size: 28px;
     text-transform: uppercase;
-    color: $accent;
+    //color: $accent;
   }
 }
 
@@ -363,7 +410,7 @@ a:hover {
   color: $background;
   border-top: solid;
   border-width: 1px;
-  border-color: $text;
+  border-color: $accent-dark;
 }
 
 .footer-con {
@@ -373,7 +420,11 @@ a:hover {
   padding-top: 1%;
   overflow: hidden;
   font-size: 12px;
-  color: $text;
+  color: $accent-dark;
+
+  a {
+    color: $accent-dark;
+  }
 }
 
 /* PROJECT PAGE */
@@ -560,7 +611,7 @@ a:hover {
   flex-direction: column;
 
   a {
-    padding: 1.5%;
+    padding: 1.2% 2% 1.2% 2%;
     border: 1px solid $text;
     border-radius: 30px;
     font-size: 16px;
@@ -663,7 +714,7 @@ a:hover {
     text-transform: uppercase;
     padding-top: 0;
     margin: 0;
-    padding: 0.8% 1.5% 1.2% 1.5%;
+    padding: 0.8% 2% 1.2% 2%;
     margin-right: 2%;
     border-radius: 18px;
     border: 1px solid $text;
@@ -827,9 +878,23 @@ h1 {
     transform: translateY(30%);
     opacity: 0;
   }
+
+  80% {
+    transform: translateY(-1%);
+  }
+
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+@keyframes fadeInOrbs {
+  0%   {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
 
@@ -957,18 +1022,20 @@ h1 {
 
   .BackToTop {
     text-transform: uppercase;
+    font-size: 14px;
     font-weight: 300;
     color: $text;
     transition: 0.3s ease-in-out;
-    padding: 0.6em;
-    border: 1px solid $text;
-    border-radius: 30px;
-    margin: 2% 0 2% 0;
+    padding: 0.8em 1.5em 0.8em 1.5em;
+    color: $text;
+    background-color: rgb(42, 42, 42);
+    //border: 1px solid $text;
+    border-radius: 18px;
   }
 
   .BackToTop:hover {
-    color: $accent;
-    border-color: $accent;
+    color: $background;
+    background-color: $accent;
   }
   
 }
@@ -990,11 +1057,8 @@ h1 {
   }
 
   .welcome-window {
-    margin: 9% 0 0 20%;
+    //margin: 9% 0 0 0%;
     height: 40%;
-  }
-  .frontpage-links {
-    margin: 0% 0 0 20%;
   }
 
   .container-project {
@@ -1062,12 +1126,6 @@ h1 {
     width: 96vw;
   }
 
-  .welcome-window {
-    margin: 9% 0 0 18%;
-  }
-  .frontpage-links {
-    margin: 2% 0 0 18%;
-  }
 
   .container-project {
     margin: 7% 18% 0 18%;
@@ -1112,6 +1170,14 @@ h1 {
 
 }
 
+@media only screen and (max-width: 1600px) {
+  .frontpage-links {
+    a {
+      min-width: 8%;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 1450px) {
   .navigation {
@@ -1121,10 +1187,11 @@ h1 {
     #website-title {
       min-width: 30%;
     }
+  }
 
-    .navigation-sub {
-
-      width: 20%
+  .frontpage-links {
+    a {
+      min-width: 10%;
     }
   }
 
@@ -1157,6 +1224,19 @@ h1 {
     
 }
 
+@media only screen and (max-width: 1370px) {
+
+  .navigation-sub {
+    width: 27%
+  }
+
+  .frontpage-links {
+    a {
+      min-width: 12%;
+    }
+  }
+
+}
 
 
 @media only screen and (max-width: 1250px) {
@@ -1169,12 +1249,9 @@ h1 {
   }
 
   .welcome-window {
-    margin: 9% 0 0 8%;
+    margin: 9% 0 0 0%;
   }
 
-  .frontpage-links {
-    margin: 4% 0 0 8%;
-  }
 
   .navigation {
     padding: 1.5% 1.5% 3% 1.5%;
@@ -1209,14 +1286,17 @@ h1 {
 
   //Styling for the tablet + mobile menue
   .mobileMenue {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -500;
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 12vh;
-    padding-bottom: 5%;
+    padding: 6% 0% 7% 0%;
     background-color: #0c0c0c;
     border-bottom: 1px solid $text;
     z-index: 200;
@@ -1229,8 +1309,9 @@ h1 {
     color: none;
 
     a {
-      font-size: 16px;
-      line-height: 2em;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 2.5em;
       font-family: gopher;
       font-weight: 300;
     }
@@ -1360,6 +1441,10 @@ h1 {
     flex: 60%;
   }
 
+  .mobileMenue {
+    padding: 5.5em 0em 5em 0em;
+  }
+
 }
 
 //Vissa tablets: 890px
@@ -1371,7 +1456,13 @@ h1 {
 
   .welcome-window {
     height: 48%;
-    width: 80%;
+    //width: 80%;
+  }
+
+  .frontpage-links {
+    a {
+      min-width: 16%;
+    }
   }
 
   //Case & Projects
@@ -1407,6 +1498,12 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
+
+  .frontpage-links {
+    a {
+      min-width: 17.5%;
+    }
+  }
 
   //Blue orbs for some tablets
   .frontpage-orbs {
@@ -1536,6 +1633,12 @@ h1 {
 }
 
 @media only screen and (max-width: 620px) {
+  .frontpage-links {
+    a {
+      min-width: 20%;
+    }
+  }
+
   .solidborderbox {
     flex-direction: column;
     column-gap: 6%;
@@ -1574,6 +1677,7 @@ h1 {
   }
   .welcome-window {
     height: 17em;
+
     .frontpage {
       h1 {
         font-size: 30px;
@@ -1629,9 +1733,8 @@ h1 {
 
   .welcome-window {
     height: 19em;
-    width: 85%;
   }
-    //Fixa rubrik framsida sen
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -1680,7 +1783,8 @@ h1 {
 
     a {
       font-size: 20px;
-      padding-right: 6%;
+      width: 50%;
+      //padding-right: 6%;
     }
   }
 
@@ -1815,11 +1919,6 @@ h1 {
     .navigation-sub {
       min-width: 50%;
     }
-  }
-
-  .mobileMenue {
-    height: 15vh;
-    padding-bottom: 5%;
   }
 }
 

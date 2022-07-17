@@ -12,7 +12,7 @@ function About(props) {
       return Math.floor(Math.random() * (max - min + 1) + min)
     }
 
-    const factArray = ["I LOVE to sing karaoke", "I've been a scout since I was 8 :')", "I drew a LOT of manga when I was little", "I've spent approximately +100h on video game lore videos", "I change my hair all the time", "I love playing Dungeons & Dragons", "My favorite TV show is Flight of the Concords or Arrested Development", "I prefer to read nonfiction.", "My planner is my 7th horocrux", "I'm 1/8 Russian but I can only drink two beers", "I was an exchange student in Silicon Valley when I was 16!", "I paint and draw a lot in my spare time", "I have a cat named Junior<3", "I first learned how to code on stallet.se", "I'm allergic to chocolate"];
+    const factArray = ["I love karaoke", "I've been a scout since I was 8", "I drew a LOT of manga when I was little", "I've spent over 100h on video game lore videos", "I change my hair all the time", "I love playing RPGs like Dungeons & Dragons and Witcher", "My favorite TV show is Flight of the Concords", "I prefer to read nonfiction.", "My planner is my 7th horocrux", "I'm 1/8 Russian but I can only drink two beers", "I was an exchange student in Silicon Valley when I was 16", "I paint and draw a lot in my spare time", "I have a cat named Junior", "I first learned how to code on Stallet.se", "I'm allergic to chocolate"];
 
     const lastIndex = factArray.length - 1
 
@@ -33,7 +33,7 @@ function About(props) {
 
             <div className="row-about">
               <div className="column-1">
-                <p><strong>Hello there! I'm Anna-Maria. I'm a 26 year old passionate UX/UI designer and developer. I've been freelancing since late 2019, and am currently wrapping up the final semester of my college degree. Combining my skills in UX/UI design and web development, I'm able to move freely between planning with the team, creating a design and implementing it through code. I'll be available for full time work opportunities starting June 2022. </strong></p>
+                <p><strong>Hello there! I'm Anna-Maria. I'm a 26 year old passionate UX/UI designer and developer. I've been freelancing since 2019 and hold a Bachelor of Science in Media Technology/HCI (2022). Combining my skills in UX/UI design and web development, I'm able to move freely between planning with the team, creating a design and implementing it through code.</strong></p>
                 <p>I have experience developing using HTML, CSS, JS, React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart and Flutter, as well as Wordpress and Webflow. I comfortable use and navigate Figma, Adobe XD, and InVision Studio, as well as the Adobe Creative Suite. I work with a holistic and user centered mindset to achieve the client's goals through team work, design thinking and agile workflows. I enjoy team work, creative work environments and am a natural problem solver.</p>
                 <p>In my spare time, I enjoy spending time with friends, playing video games, Dungeons and Dragons, painting and programming – like this website, for instance, which is made with React.js and SASS.</p>
                 <br></br>
@@ -44,7 +44,7 @@ function About(props) {
               <div className="column-2">
                 <img src={me} alt="me" />
                 <div className="column-2-factcon">
-                  <button onClick={funFact}>Click here for a fun fact!</button>
+                  <button onClick={funFact}>Click here for a fun fact! 🎉</button>
                   <p className="factoid">{ funFactoid }</p>
                 </div>
               </div>
