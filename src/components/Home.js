@@ -12,10 +12,10 @@ function Home(props) {
 
             <div className="welcome-window">
                 <div className="frontpage">
-                    <h1 id="me">Tjena! I'm Anna-Maria. I'm a...</h1>
-                    <h1 id="designer">UX/UI Developer</h1>
-                    <h1 id="developer">who loves to code</h1>
-                    <h1 id="personality">and eat pasta carbonara</h1>
+                    <h1 id="me">Tjena! I'm A-M. I'm a...</h1>
+                    <h1 id="designer">UX/UI Engineer</h1>
+                    <h1 id="developer">who loves to design</h1>
+                    <h1 id="personality">and build meaningful experiences</h1>
                     <h1 id="welcome">Welcome to my portfolio!{/*  <span id="blinkis">|</span> */}</h1>
                 </div>
             </div>
