@@ -1,5 +1,5 @@
-import React from "react"
-import BlueOrb from "./blueorb.js";
+import React from "react";
+import { NavLink } from 'react-router-dom'; 
 import CaseHome from "./CaseHome.js";
 import BackToTop from "./BackToTop.js";
  
@@ -7,32 +7,18 @@ function Home(props) {
 
   return (
     <div>
-        <BlueOrb />
         <div id="upper-home">
-
-            <div className="welcome-window">
-                <div className="frontpage">
-                    <h1 id="me">Tjena! I'm A-M. I'm a...</h1>
-                    <h1 id="designer">UX/UI Engineer</h1>
-                    <h1 id="developer">who loves to design</h1>
-                    <h1 id="personality">and build meaningful experiences</h1>
-                    <h1 id="welcome">Welcome to my portfolio!{/*  <span id="blinkis">|</span> */}</h1>
-                </div>
-            </div>
-
-            <div className="frontpage-links">
-                <h1>Find me in other places</h1>
-                <a href={'http://instagram.com/amhjo.design'}>Instagram <i class="fas fa-chevron-right"></i></a> <a href={'https://www.linkedin.com/in/anna-maria-hjorth-48bb327a/'}>LinkedIn <i class="fas fa-chevron-right"></i></a> <a href={'https://github.com/amhjo/'}>GitHub <i class="fas fa-chevron-right"></i></a>
-            </div>
+            <div className="frontpage">
+              <h1 id="me">Hi! I'm SASCHA</h1><br></br>
+              <h1 id="designer">a <NavLink to="/about">Designer</NavLink> that <NavLink to="/projects">Codes</NavLink>,</h1>
+              <h1 id="developer">specialized in Design Systems</h1>
+              <h1 id="welcome">Welcome to my portfolio!{/*  <span id="blinkis">|</span> */}</h1>
+            </div> 
         </div>
-
-        <div id="arrow">↓</div>
        
        <div className="page-con">
             <CaseHome />
         </div>
-
-        <BackToTop />
 
     </div>
   )

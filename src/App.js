@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'; 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import Projects from './components/Projects.js'; 
 import About from './components/About.js';
 import { Remap, Internetskolan, Codimals, SustainLab, Leo, Legimeet } from './components/Cases.js';  
@@ -7,6 +7,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './components/Home.js';
 import Contact from './components/Contact.js';
+import { Mosaik } from './components/Cases.js';
 import './App.scss';
  
 function App() {
@@ -16,18 +17,19 @@ function App() {
       <div className="App">
     
         <Header />
-
-        <Route exact path="/" component={Home} />
-        <Route exact path="/projects" component={Projects} />
-        <Route path="/about" component={About} />
-        <Route path="/Remap" component={Remap} />
-        <Route path="/Internetskolan" component={Internetskolan} />
-        <Route path="/Sustainlab" component={SustainLab} />
-        <Route path="/Legimeet" component={Legimeet} />
-        <Route path="/Leo" component={Leo} />
-        <Route path="/Codimals" component={Codimals} />
-        <Route path="/contact" component={Contact} />
-
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/Mosaik" element={<Mosaik />} />
+            <Route path="/Remap" element={<Remap />} />
+            <Route path="/Internetskolan" element={<Internetskolan />} />
+            <Route path="/Sustainlab" element={<SustainLab />} />
+            <Route path="/Legimeet" element={<Legimeet />} />
+            <Route path="/Leo" element={<Leo />} />
+            <Route path="/Codimals" element={<Codimals />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         <Footer />
 
       </div>

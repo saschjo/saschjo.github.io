@@ -31,7 +31,7 @@ function InternetskolanContent(props) {
       />
 
       <div className="visit-case-subject">
-        <a href={'https://amhjo.github.io/internetskolan/'}>Experience Internetskolan here</a>
+        <a href={'https://amhjo.github.io/internetskolan/'}>Experience Internetskolan here →</a>
         <p>* This prototype is not responsive, and works best on 13" screens.</p>
       </div>
 
@@ -97,14 +97,19 @@ function InternetskolanContent(props) {
         <h3>Define</h3>
         <h4>Point of View and How Might We</h4>
         <p>To get closer to understanding our users’ needs, we produced a myriad of How Might We-prompts as well as a collective Point of View.</p>
-        <div className="bigwords">Elderly people over 65 need to learn more about the internet in order to dare to be involved.</div>
-        <div className="bigwords-caption">– Our Point of View</div>
-        <div className="bigwords">How might we teach seniors about the internet in a fun and inspirational way?</div>
-        <div className="bigwords-caption">– Our final How Might We-prompt</div>
+        
+        <div className="bigwords">
+          <h3>Elderly people over 65 need to learn more about the internet in order to dare to be involved.</h3>
+          <div className="bigwords-caption">– Our Point of View</div>
+          <h3>How might we teach seniors about the internet in a fun and inspirational way?</h3>
+          <div className="bigwords-caption">– Our final How Might We-prompt</div>
+        </div>
         <h4>Core values</h4>
         <p>As the project was evolving, the amount of information we’d collected about our users, Spånga-Tensta and different strategies began to pile up. To prevent getting off track, I suggested we condense our user insights into a few core values to lead our project throughout our iterative process. These were:</p>
-        <div className="bigwords">Knowledge, Meaningfulness, Participation, Safety, Independence.</div>
-        <div className="bigwords-caption">– Our core values</div>
+        <div className="bigwords">
+          <h3>Knowledge, Meaningfulness, Participation, Safety, Independence.</h3>
+            <div className="bigwords-caption">– Our core values</div>
+        </div>
       </div>
 
       <FullImage 

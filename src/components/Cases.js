@@ -6,26 +6,51 @@ import InternetskolanContent from './InternetskolanContent.js';
 import SustainlabContent  from './SustainlabContent.js';
 import LegimeetContent from './LegimeetContent.js';
 import LeoContent from "./LeoContent.js";
+import MosaikContent from "./MosaikContent.js";
+import PovbContent from "./PovbContent.js";
+import mosaik_thumb from './assets/mosaik/mosaik_thumb.png';
+import remap_1 from './assets/remap/remap_1.jpg';
+import internetskolan_framsida from './assets/internetskolan/internetskolan_framsida.gif';
+import rav from './assets/swedishanimals/rav.gif';
+import legimeet_vote from "./assets/legimeet/legimeet_vote.gif";
+
+function Mosaik(props) {
+
+  return (
+          <div className="project-1">
+              <ProjectObject
+                image={mosaik_thumb}
+                title="Mosaik Design System"
+                category="Design System"
+                client=" HSB Affärsstöd"
+                mission=" Custom Design System"
+                myrole=" Design Lead and UX/UI Engineer"
+                datum="2021 – Ongoing"
+                description="HSB, a top Swedish housing management cooperative, manages homes for 1 in 10 Swedes. They offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
+                  />
+              <MosaikContent />
+
+          </div>
+  )
+}
  
 function Remap(props) {
 
     return (
-        <div className="container-project">
             <div className="project-1">
                 <ProjectObject
+                  image={remap_1}
                   title="Re:Map"
-                  category="✧ Graphic and Product Design"
+                  category="Graphic and Product Design"
                   uppdragstyp=" School project"
                   mission=" Pitch material and graphic identity"
                   myrole=" Product-, Graphic- and Motion Designer"
                   datum=" Three weeks (Dec. 2020 – Jan. 2021)"
-                  description="Re:Map was a school project where we really got to flex our creative muscles. The assignment was to create pitch material in the form of a graphic identity and short film for a design solution previously created by our classmates. We chose to work on Re:Map. The result was a modern punk concept aiming to inspire teens to make their voices heard through action, creativity, and team work. Re:Map was met with a lot of praise from both classmates and teachers alike, and is one of my favourite projects I’ve ever worked on."
+                  description="Re:Map was a creative venture where we crafted pitch material, including a graphic identity and short film, for a design solution developed by classmates. Choosing to work on Re:Map, we embraced a modern punk concept to inspire teens through action, creativity, and teamwork. The project received high praise from both classmates and teachers, and to this day it's one of my favorite projects I've ever worked on."
                     />
-
                 <RemapContent />
 
             </div>
-        </div>
     )
   }
   
@@ -35,8 +60,9 @@ function Internetskolan(props) {
        
       <div className="container-project">
               <ProjectObject
+                  image={internetskolan_framsida}
                   title="Internetskolan"
-                  category="✧ Product, UX/UI Design and Development"
+                  category="Product, UX/UI Design and Development"
                   uppdragstyp=" Live client project"
                   mission=" Solving the digital divide in Spånga-Tensta"
                   myrole=" Product-, UX/UI Designer and Web Developer"
@@ -58,8 +84,9 @@ function Codimals(props) {
         <div className="project-container">
           <div className="project-1">
               <ProjectObject
+                  image={rav}
                   title="Codimals"
-                  category="✧ Product-, UX/UI Design and Development"
+                  category="Product-, UX/UI Design and Development"
                   uppdragstyp=" School project"
                   mission=" Interactive web experience in p5.js"
                   myrole=" Designer, developer and illustrator"
@@ -85,7 +112,7 @@ function Leo(props) {
           <div className="project-1">
               <ProjectObject
                   title="Leo;"
-                  category="✧ Product and Graphic Design"
+                  category="Product and Graphic Design"
                   uppdragstyp=" School assignment"
                   mission=" Typographic logo and mock-ups"
                   myrole=" Product and Graphic designer"
@@ -111,7 +138,7 @@ function SustainLab(props) {
           <div className="project-1">
               <ProjectObject
                   title="SustainLab-SH"
-                  category="✧ Web Development and Graphic Design"
+                  category="Web Development and Graphic Design"
                   uppdragstyp=" Client project"
                   mission=" Website and logo design"
                   myrole=" Project Manager, UX/UI Designer and Developer"
@@ -128,6 +155,32 @@ function SustainLab(props) {
 
 }
 
+function povb(props) {
+
+  return (
+        // Render a Thumbnail component
+      <div className="container-project">
+        <div className="project-container">
+          <div className="project-1">
+              <ProjectObject
+                  title="Plåt & Vent-byrån"
+                  category="Graphic Identity and UX/UI Design"
+                  uppdragstyp=" Client project"
+                  mission=" Website and logo design"
+                  myrole=" Project Manager, UX/UI Designer and Developer"
+                  datum=" Fall of 2020 – Spring of 2021"
+                  description="SustainLab-SH is a venture of the Environmental Science Department, Södertörn University. They recruited me and my project partner David Wechana to create a website for them that they would be able to update themselves, share their research, as well publish posts. They also needed a logo for this venture. We realized this project in Wordpress and Elementor, utilizing user research and testing to validate the project iteratively throughout. The client was very happy with the result."
+                />
+
+              <PovbContent />
+
+          </div>
+        </div>
+      </div>
+  )
+
+}
+
 function Legimeet(props) {
 
   return (
@@ -136,8 +189,9 @@ function Legimeet(props) {
         <div className="project-container">
           <div className="project-1">
               <ProjectObject
+                  image={legimeet_vote}
                   title="Legimeet"
-                  category="✧ UX/UI Design and Development"
+                  category="UX/UI Design and Development"
                   uppdragstyp=" Client Project"
                   mission=" UX/UI Development and design"
                   myrole=" UX/UI Developer and designer"
@@ -155,10 +209,12 @@ function Legimeet(props) {
 }
  
 export {
+  Mosaik,
   Remap,
   Internetskolan,
   Codimals,
   SustainLab,
+  povb,
   Leo,
   Legimeet
 }

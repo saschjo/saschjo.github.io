@@ -22,7 +22,7 @@ function RemapContent(props) {
   return (
     <div className="InnerCaseWrapper">
 
-      <iframe title="Remap pitch video" src="https://player.vimeo.com/video/500366747?h=9f3a46c6e1" height="500px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <iframe title="Remap pitch video" src="https://player.vimeo.com/video/500366747?h=9f3a46c6e1" width="1000px" height="700px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
       <div className="case-text">
         <h3>Introduction</h3>

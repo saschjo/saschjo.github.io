@@ -4,8 +4,10 @@ function Contact() {
     return (
 
         <div className="Contact">
-            <h1 id="contact-name">✧ Anna-Maria Hjorth ✧</h1>
-            <h1>annamariahjo@gmail.com</h1>
+            <div class="content">
+                <h1>I'm a consultant at Nexer Maverick</h1>
+                <a href={'mailto:annamariahjo@gmail.com'}>annamariahjo@gmail.com</a>
+            </div>
         </div>
     )
 }
