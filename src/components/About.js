@@ -38,8 +38,8 @@ function About(props) {
             <p>I'm highly proficient in Figma, but am no stranger to other prototyping software or the Adobe Creative Suite. My toolkit includes HTML, CSS, JS, React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart, Flutter, Wordpress, and Webflow.</p> 
             <p>Outside of work, I enjoy getting creative any way I can, gaming, playing Dungeons and Dragons with my friends, and making things – like this website, crafted with React.js and SASS.</p>
           </div>
-                <p className="factoid">{ funFactoid }</p>
-                <button className="fact-button" onClick={funFact}>Click here for a fun fact! 🎉</button>
+             {/*    <p className="factoid">{ funFactoid }</p>
+                <button className="fact-button" onClick={funFact}>Click here for a fun fact! 🎉</button> */}
         </div>
       </div>
   )
