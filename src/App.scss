@@ -1,28 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
-@import "../src/components/assets/type/Dirtyline 36daysoftype 2022.css";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
-$background: #0c0c0c;
+$background: #001bb6;
 $text: #fafafa;
-$accent: #c1ff64;
-$accent-dark: #b3b3b3;
-$accent-light: #cfcfcf;
+$accent: #fca9ce;
+$accent-dark: #d1d1d1;
+$accent-light: #eeeeee;
 
-$deep-elevation: #101010;
-$dark-elevation: #181818;
-$mid-elevation: #2B2E27;
+$deep-elevation: #0022e3;
+$dark-elevation: #0f32f4;
+$mid-elevation: #092bee;
 
 html {
   height: 100%;
   width: 100%;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: 'Hanken Grotesk', sans-serif; 
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*STYLING START*/
 body {
   background: $background; 
   color: $text;
-  font-family:  degular, sans-serif; 
+  font-family:  'Hanken Grotesk', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   margin: 0;
   min-height: 100%;
   max-width: 99vw;
@@ -31,7 +35,7 @@ body {
 
 .App {
   text-align: left;
-  font-family:  degular, sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -97,16 +101,15 @@ a:hover {
 
 /*My name hehe*/
 #website-title {
-  font-family: degular, sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif; 
   display: flex;
   gap: 0.5rem;
   align-items: center;
   color: $text;
-  letter-spacing: -0.01rem;
-  font-size:  1rem;
-  font-weight: 300;
+  letter-spacing: -0.02rem;
+  font-size:  1.25rem;
+  font-weight: 400;
   z-index: 300;
-  text-transform: uppercase;
   background-color: $dark-elevation;
   padding: 0rem 1.5rem 0rem 1.5rem;
   border-radius: 2rem;
@@ -132,9 +135,9 @@ a:hover {
     display: flex;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1rem;
     transition: 0.2s;
-    font-weight: 300;
+    font-weight: 400;
     color: $text;
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
@@ -229,7 +232,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $dark-elevation;
+  background-color: $deep-elevation;
 
   .frontpage {
     min-width: 100vw;
@@ -264,24 +267,22 @@ a:hover {
 
 
 .frontpage h1 {
-  font-family: "Dirtyline36Daysoftype2022", Georgia;
-  letter-spacing: -0.1rem;
-  font-weight: 300;
-  font-size: 5.5rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  letter-spacing: -0.2rem;
+  font-weight: 500;
+  font-size: 5rem;
   color: $text;
-  mix-blend-mode: difference;
   text-align: center;
 
   a {
+    display: inline;
     text-decoration: dashed underline;
     color: $accent;
     }
 
     a:hover {
-      color: $accent;
-      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 0.01px;
-      -webkit-text-stroke-color: $accent;
+      transform: rotate(-90deg);
+      color: yellow;
   }
 }
 
@@ -291,9 +292,6 @@ a:hover {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
-}
-
-#me {
 }
 
 #designer {
@@ -370,8 +368,7 @@ a:hover {
   }
 
 
-  h1, a {
-    font-family: degular, sans-serif; //'Anonymous Pro', monospace;
+  h1, a {//'Anonymous Pro', monospace;
     letter-spacing: -0.1rem;
     font-weight: 500;
     font-size: 4rem;
@@ -466,8 +463,9 @@ a:hover {
   min-width: 100%;
   background-color: $background;
   border-radius: 1rem;
-  border: 1px solid $dark-elevation;
+  border: 4px solid $mid-elevation;
   height: 24rem;
+  font-weight: 300;
 
   .description {
     flex-direction: column;
@@ -486,7 +484,7 @@ a:hover {
   p {
     text-transform: uppercase;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
   }
 
   a {
@@ -519,16 +517,12 @@ a:hover {
 
 .project:hover {
   cursor: pointer;
-  background-color: $deep-elevation;
-  border: 2px solid $dark-elevation;
+  background-color: $mid-elevation;
+  transform: rotate(-1deg);
 
   .project-title {
     color: $accent;
     text-decoration: underline dashed;
-  }
-
-  .project-desc {
-    color: $text;
   }
 
   .tag {
@@ -538,14 +532,14 @@ a:hover {
 }
 
 .project-title {
-  font-family: degular, sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   padding: 1rem 0rem 0.8rem 0rem;
   font-size: 3rem;
   font-weight: 500;
 }
 
 .category {
-  font-family: degular, sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   width: fit-content;
   height: 1.5rem;
   font-size: 1rem;
@@ -588,6 +582,7 @@ a:hover {
   img {
     width: 100%;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 }
 
@@ -596,14 +591,15 @@ a:hover {
   width: 100%;
 
   p {
-    font-size: 1.25rem;
-    line-height: 1.5em;
+    font-size: 1.15rem;
+    line-height: 1.6em;
     color: $accent-light;
+    font-weight: 200;
     margin: 1rem 0 2rem 0;
   }
 
   h3 {
-    font-family: degular;
+    font-family: 'Hanken Grotesk', sans-serif;
     color: $text;
     font-size: 2.5rem;
     padding: 0;
@@ -613,7 +609,7 @@ a:hover {
   }
 
   h4 {
-    font-family: degular;
+    font-family: 'Hanken Grotesk', sans-serif;
     color: $text;
     font-weight: 500;
     text-transform: uppercase;
@@ -680,11 +676,11 @@ a:hover {
   flex-direction: column;
 
   a {
+    font-family: 'Hanken Grotesk', sans-serif;
     font-size: 1.75rem;
     color: $accent;
     transition: 0.3s ease;
     font-weight: 500;
-    font-family: degular;
     text-transform: uppercase;
     display: block;
     }
@@ -731,12 +727,13 @@ a:hover {
 
   img {
     position: absolute;
-    width: 50%;
+    width: 80%;
     z-index: -500;
     transform: translate(-8rem, -2rem);
-    opacity: 0.3;
+    opacity: 0.5;
     mix-blend-mode: saturation;
     border-radius: 1rem;
+    filter: grayscale(100%);
   }
 
   img:hover {
@@ -747,8 +744,6 @@ a:hover {
     display: inline-block;
     margin: 0;
     font-size: 5rem;
-    font-family: "Dirtyline36Daysoftype2022", Georgia;
-    font-weight: 100;
     color: $text;
     margin: 0;
 
@@ -798,14 +793,12 @@ h2, h3 {
 h1 {
   color: $accent-light;
   font-size: 20px;
-  padding-bottom: 1%;
   margin: 0;
 }
 
 #frontpage-h1 {
   padding: 0% 0% 0.5% 0%;
   font-size: 32px;
-  font-family: degular;
 }
 
 .subtag {
@@ -847,7 +840,6 @@ h1 {
     display: inline-block;
     margin: 0;
     font-size: 5rem;
-    font-family: degular, sans-serif;
     font-weight: 600;
     color: $text;
     margin: 0;
@@ -974,14 +966,12 @@ h1 {
   }
 
   h1  {
-    font-family: "Dirtyline36Daysoftype2022", Georgia;
     font-size: 5rem;
     color: $text;
     font-weight: 500;
   }
 
   h2 {
-    font-family: degular, sans-serif;
     font-size: 2rem;
     font-weight: 200;
   }
@@ -1010,7 +1000,6 @@ h1 {
 
   h1 {
     font-size: 26px;
-    padding-bottom: 1%;
     color: rgb(63, 63, 63);
   }
 }

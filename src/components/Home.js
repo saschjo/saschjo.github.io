@@ -9,9 +9,8 @@ function Home(props) {
     <div>
         <div id="upper-home">
             <div className="frontpage">
-              <h1 id="me">Hi! I'm SASCHA</h1><br></br>
-              <h1 id="designer">a <NavLink to="/about">Designer</NavLink> that <NavLink to="/projects">Codes</NavLink>,</h1>
-              <h1 id="developer">specialized in Design Systems</h1>
+              <h1 id="me">Hello! I'm Sascha</h1>
+              <h1 id="designer">a <NavLink to="/about">UX/UI Designer</NavLink> that <NavLink to="/projects">Codes</NavLink>,</h1>
               <h1 id="welcome">Welcome to my portfolio!{/*  <span id="blinkis">|</span> */}</h1>
             </div> 
         </div>

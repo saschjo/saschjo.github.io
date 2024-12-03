@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import me from './assets/me_2024.jpg';
+import me from './assets/DSC06868.jpg';
 import Hello from './Hello.js';
  
 function About(props) {
@@ -32,7 +32,7 @@ function About(props) {
         <div className="PageWrapper">
           <div className="about">
           <img src={me} alt="me"/>
-            <h1>Hi, I'm Sascha! 👋</h1>
+            <h1>About me</h1>
             <p><strong>I'm a human-centered designer specializing in crafting design systems and future-proof solutions, seamlessly bridging the gap between design and code.</strong></p>
             <p>Employing a holistic, user-centered approach, I leverage teamwork, design thinking, and agile workflows to achieve client goals. I excel in creative environments and pride myself on being a natural problem solver and team collaborator.</p>
             <p>I'm highly proficient in Figma, but am no stranger to other prototyping software or the Adobe Creative Suite. My toolkit includes HTML, CSS, JS, React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart, Flutter, Wordpress, and Webflow.</p> 
