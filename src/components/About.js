@@ -31,15 +31,23 @@ function About(props) {
     <div className="page-con">
         <div className="PageWrapper">
           <div className="about">
-          <img src={me} alt="me"/>
-            <h1>About me</h1>
-            <p><strong>I'm a human-centered designer specializing in crafting design systems and future-proof solutions, seamlessly bridging the gap between design and code.</strong></p>
-            <p>Employing a holistic, user-centered approach, I leverage teamwork, design thinking, and agile workflows to achieve client goals. I excel in creative environments and pride myself on being a natural problem solver and team collaborator.</p>
-            <p>I'm highly proficient in Figma, but am no stranger to other prototyping software or the Adobe Creative Suite. My toolkit includes HTML, CSS, JS, React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart, Flutter, Wordpress, and Webflow.</p> 
-            <p>Outside of work, I enjoy getting creative any way I can, gaming, playing Dungeons and Dragons with my friends, and making things – like this website, crafted with React.js and SASS.</p>
+            <div className="about-left">
+              <img src={me} alt="me"/>
+              <p className="factoid">{ funFactoid }</p>
+              <button className="fact-button" onClick={funFact}>Click here for a fun fact! 🎉</button>
+            </div>
+            <div className="about-right">
+              <h1>About me</h1>
+              <p><strong>I'm a human-centered designer specializing in crafting design systems and future-proof solutions, seamlessly bridging the gap between design and code.</strong></p>
+              <h3>My approach</h3>
+              <p>Employing a holistic, user-centered approach, I leverage teamwork, design thinking, and agile workflows to achieve client goals. I excel in creative environments and pride myself on being a natural problem solver and team collaborator.</p>
+              <h3>As a designer</h3>
+              <p>I'm highly proficient in Figma, but am no stranger to other prototyping software or the Adobe Creative Suite.</p>
+              <h3>As a UX Engineer</h3>
+              <p>My toolkit includes HTML, CSS, JS, React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart, Flutter, Wordpress, and Webflow.</p> 
+              <p>Outside of work, I enjoy getting creative any way I can, gaming, playing Dungeons and Dragons with my friends, and making things – like this website, crafted with React.js and SASS.</p>
+            </div>
           </div>
-             {/*    <p className="factoid">{ funFactoid }</p>
-                <button className="fact-button" onClick={funFact}>Click here for a fun fact! 🎉</button> */}
         </div>
       </div>
   )

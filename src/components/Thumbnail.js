@@ -14,7 +14,9 @@ function Thumbnail(props) {
           </div>
             <div className="project-category">{props.category}</div>
           </div>
+          <div className="image">
             <img src={props.image} alt="Projektbild"/>
+          </div>
         </Link>
       </div> 
     )
