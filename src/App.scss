@@ -11,6 +11,7 @@ $dark-elevation: #0f32f4;
 $mid-elevation: #092bee;
 
 html {
+  position: relative;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -31,6 +32,7 @@ body {
   min-height: 100%;
   max-width: 99vw;
   position: relative;
+  overflow: auto;
 }
 
 .App {
@@ -225,8 +227,9 @@ a:hover {
 
 #upper-home {
   height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
   margin-top: 0rem;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +240,7 @@ a:hover {
   .frontpage {
     display: flex;
     flex-direction: column;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
