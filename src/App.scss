@@ -529,7 +529,7 @@ a:hover {
   }
 }
 
-.project:nth-child(odd) {
+.project:nth-child(odd) { /* Makes every other project flipped */
 
   a {
   display: flex;
@@ -538,9 +538,11 @@ a:hover {
 }
 
 .project:nth-child(even) {
-  
+
+  a {
   display: flex;
   flex-direction: row-reverse;
+  }
 }
 
 .project:hover {
@@ -564,7 +566,7 @@ a:hover {
   font-family: 'Hanken Grotesk', sans-serif;
   padding: 1rem 0rem 0.8rem 0rem;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .category {
