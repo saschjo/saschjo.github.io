@@ -2,86 +2,122 @@ import React from "react";
 import FullImage from "./CaseCmpnts.js";
 import mosaik_img from './assets/mosaik/mosaik_img.png';
 import mosaik_img_cover from './assets/mosaik/mosaik_img_cover.png';
+import mosaik_tokens from './assets/mosaik/mosaik-tokens.png'
+import mosaik_colors from './assets/mosaik/mosaik-colors.png'
+import mosaik_components from './assets/mosaik/mosaik-components.png'
+import mosaik_modals from './assets/mosaik/modals.png'
+import placeholder from './assets/mosaik/placeholder.png';
 import minprofil from './assets/mosaik/minprofil.png';
 import mosaik_img_icons from './assets/mosaik/mosaik_img_icons.png';
-import mosaik_img_comp from './assets/mosaik/mosaik_img_comp.gif';
+import mosaik_datatable from './assets/mosaik/data table.png';
 import mosaik_img_btn from './assets/mosaik/mosaik_img_btn.png';
-import BackToTop from "./BackToTop.js";
  
 function MosaikContent(props) {
   return (
     <div className="InnerCaseWrapper">
       <div className="case-text">
-        <h3>Project background</h3>
-        <p>I was brought on as a UX Engineer to help bridge the gap between design and development. When I joined the project, I identified several pain points that halted progress at the cost of both time and money.</p>
-        
-        <h4>Problem statement</h4>
-        <p>HSB Affärsstöd struggled to deliver the high-quality user experience they aimed for while maintaining consistency in both design and development. Their previous waterfall methodology, with minimal user input, prioritized large-scale deliveries focusing on functionality over experience. This resulted in similar services using different design patterns—confusing and frustrating users. An interactive element that worked well in one service might unexpectedly fail in another. Moreover, design and development were time-consuming, as teams had to build components and structures from scratch for each project. Most services were "hard-coded" and iFramed, severely limiting their interaction with the surrounding navigational UI. This approach also meant that maintenance or design updates were isolated to specific service instances rather than applying to the entire service catalog. User feedback indicated frustration, confusion, and even anger.</p>
-        <p>Switching to an agile workflow with fast-paced, small-scale deliveries, HSB aimed to achieve consistency in visual design and user experience throughout their services. A key point was that they wanted their services to assist users in their everyday living and council work, ranging from paying bills to transferring apartments and writing protocols. They also wanted to deliver changes faster and holistically with dynamic control over the UI—for example, changing the shade of one primary button would apply to all primary buttons in their service catalog.</p>
-      </div>
+        <h2>Introduction</h2>
+        <h3>Project introduction</h3>
+        <p>HSB Affärsstöd is a nationally co-operated organization with over 100 years of history and a broad, diverse user base—from young adults seeking their first apartment to senior stakeholders involved in co-op councils.</p>
+        <p>I was brought on as a UX Engineer to help bridge the gap between design and development. Early on, I identified several friction points that were slowing down delivery, wasting resources, and diminishing user satisfaction.</p>
+        <h4>My role</h4>
+        <p>I created Mosaik, HSB’s first-ever design system, and led its development for 2.5 years. I was responsible for independently designing, testing, and documenting the vast majority of components, tokens, and patterns. Through extensive collaboration and stakeholder advocacy, I turned Mosaik from a personal initiative into a critical, organization-wide investment.</p>
+    </div>
 
-      <div className="case-text">
-        <h3>Mosaik, a custom atomic design system</h3>
-        
-        <h4>Why a design system?</h4>
-        <p>Design systems allow for the creation of cohesive UIs and save time by allowing single-line code changes instead of many. They offer both designers and frontend developers creativity within limits, ensuring usability and accessibility, and help designers and developers work in sync, enhancing innovation and testing. They also save organizations time and money – with a library of components and patterns ready to go, a flow that would’ve taken weeks to design and test can be finished in as little as a few days. Since development has access to the same library of UI building blocks as the designers do, the production goes much quicker without as much need for checking in regarding colors, spacing or typography. It’s already there, mirrored in the design system.</p>
-        
-        <h4>Why make Mosaik atomic?</h4>
-        <p>HSB Affärsstöd faced numerous consistency issues due to a lack of control over individual UI elements. A single service might have four primary buttons in four different shades of blue. Spacing, layout, and effects like drop shadows were similarly inconsistent. While smaller, fast-paced projects can manage with a limited set of components, this approach sacrifices control and can lead to long-term problems—precisely the issue we aimed to solve.</p>
-        <p>Given the scale of HSB's service catalog, website, and intranet, we couldn't deliver a simple design system without compromising essential control. Atomic design systems offered a solution by using small components to build complex ones. Design tokens (also known as sub-atoms) such as line-heights and color codes form buttons (atoms). Combining buttons and text fields creates forms (molecules), and adding titles produces organisms.</p>
-        <p>I decided that if we were going to build a custom design system from scratch, we'd do it thoroughly—from sub-atomic design tokens all the way up to fully fledged pages.</p>
-      </div>
-
-      <FullImage 
-      image={minprofil}
+    <FullImage 
+      image={mosaik_datatable}
       caption="Front page of the launched hi-fi prototype."
       />
 
-      <div className="case-text">
-        <h2>Work process</h2>
-        <h3>Design Tokens</h3>
-        <h4>Token sets, values and naming convention</h4>
-        <p>HSB Affärsstöd wished for us to utilize their existing brand identity style guide as much as possible. Basing our color and typographic system on this, we aimed to achieve as high a level of abstraction as possible. This way, we'd allow for any future change of values within the tokens without having to correct any code. In order to secure as high level of granular control over the design system as possible, we split our tokens into two sets: Core and Alias. The Core set was created as a "root" source of truth for all the alias tokens to inherit their values from.</p>
-        
-        <h4>Accessibility and future proofing</h4>
-        <p>In order to meet WCAG 2.0 requirements, many colors from the style guide had to be adjusted. They were then separated into specific sets – background colors, forground colors, border colors etc. This both guided designers to make accessible designs with minimal mental load, as well as giving us a high level of control over specific instances within every component. Changing —mosaik-background-color-neutrals-300 wouldn’t just affect singular components, but all components inheriting their color value from that specific token.</p>
-        
-        <h4>Designing for designers</h4>
-        <p>A previous issue was designers having too much freedom, leading to an incoherent visual expression. I pondered how we might set helpful guardrails without stifling innovation. Many design systems allow any value divisible by 8, but this risks designer preference and habit overriding holistic visual consistency. Inspired by Tailwind.css, I designed a limited spacing and sizing system based on an exponential 8px scale, avoiding "medium" values. This system nudges designers away from preferential choices—you either use ample spacing (48px) or minimal spacing (32px). Long-term use of Mosaik has proven this system highly effective, with high consistency across independent design work using the system.</p>
-        
-        <h4>Securing integrity as the system grows</h4>
-        <p>A crucial aspect of any design system is to view it as a living product. When something is missing, doesn't work, or creates friction, the system must be able to grow, adapt to new requirements, and integrate newfound insights. However, it's equally—if not more—important to recognize when a restriction is helpful and understand the consequences of removing it. This is especially true for design tokens, as they form the foundation of everything else within the system.</p>
-        <p>To safeguard Mosaik's token integrity, I implemented a system where if a value (color, size, or otherwise) was needed at least three times in three independent instances—without an existing token satisfactorily replacing it—its implementation would be discussed within the design team. The token would then undergo a trial run, accessible in Figma but not yet in the Tokens.json file. After sufficient integration and testing, it would be finalized and added to Mosaik as a whole. This approach ensured that individual flows didn't exert undue influence over Mosaik, preserved the integrity of design tokens, and enhanced the system's overall cohesion.</p>
+    <div className="case-text">
+        <h3>Problem statement</h3>
+        <p>HSB Affärsstöd offered over 30 different services but lacked a unified design approach. The waterfall process relied heavily on internal assumptions, often ignoring actual user needs. This led to a fragmented UX landscape: inconsistent design patterns, long development times, and significant user frustration.</p>
+        <p>Teams frequently rebuilt components from scratch, leading to inefficiencies and confusion. Internally and externally, trust in the digital experience was low. Speculative features aimed at speculative needs cost time, money, and morale.</p>
+        <p>So how could we meet the needs of both users and internal teams in a scalable, maintainable way?</p>
       </div>
 
       <FullImage 
-      image={mosaik_img_comp}
-      caption="A demo of the versatility of the Data Table Organism, constructed from 10+ separate components."
-      />
-
-<FullImage 
-      image={mosaik_img}
-      caption="Front page of the launched hi-fi prototype."
+      image={mosaik_modals}
+      caption="An excerpt from the Mosaik documentation utilizing the spacing tokens and types of mobile modals."
       />
 
       <div className="case-text">
-        <h3>Designing and constructing components</h3>
-        <h4>Design values and goals</h4>
-        <p>HSB's user group is incredibly diverse—ranging from young people seeking their first apartment to dedicated seniors making decisions in cooperation councils. Consequently, Mosaik needed to work for the widest possible range of people, achieving a high level of usability. Recognizing that any system is simply the sum of its parts, I applied this mindset to the design of every single component, no matter how small. My goal was to ensure that regardless of who you were, you wouldn't have to think about what you're seeing on the screen—you could simply scan, click, and go.</p>
+        <h2>How we did it</h2>
+        <h3>Starting on a sub-atomic level</h3>
+        <p>I proposed an atomic design approach to build the system from the ground up. This method offered modular control while promoting speed and reusability—key business objectives. For the first two months, I was joined by UX colleague Amina Muftic, who helped establish the foundation of Mosaik.</p>
+       <p>We adapted HSB’s brand guidelines to meet WCAG 2.0 standards, adjusting colors to a minimum AA contrast level. Inspired by systems like Adobe Spectrum, we categorized tokens (e.g., background, border, foreground) for greater clarity. A single update—like --mosaik-background-color-neutrals-300—could cascade across the entire system.</p>
+       <p>We applied this rigor to all visual attributes: spacing, sizing, radius, and shadow. Tokens were divided into Core and Alias sets, ensuring both flexibility and precision. These tokens were integrated directly into Figma and exported as JSON files, which our frontend developer, Frida Frick, converted into CSS/SCSS variables via Style Dictionary.</p>
 
-        <h4>Inventory and research</h4>
-        <p>In order to decide which components to construct in Mosaik, I went through as much of HSB Affärsstöds existing services as possible, noting which components were prominent and not. After doing this, I benchmarked designsystems of large scale organizations with similar needs – among others IBM, Google, Atlassian, Adobe and IKEA. Noting which components were necessary for HSB’s immediate needs and which would be superfluous or ineffective, I got to work.</p>
-        
-        <h4>Design Thinking on an atomic level</h4>
-        <p>Each component underwent a two-week process for its initial version, including ideation, testing, construction, and documentation. New components were introduced only when they served a specific purpose that existing ones couldn't adequately fulfill. This approach aimed to reduce design inconsistency and create recognizable patterns for users to learn and internalize.</p>
-        <p>Throughout the process, I adhered closely to usability best practices to create intuitive components that would meet user expectations and enhance learnability. I consistently benchmarked my designs against existing design systems and popular platforms. The designs were then tested through a combination of preference tests, A/B tests, and qualitative interviews to find out what users were thinking and feeling. This research was then fed back into the design process, sometimes influencing elements as fundamental as design tokens or visual patterns.</p>
-        <p>This highly iterative process allowed each insight to refine Mosaik incrementally. The atomic construction and high level of control I'd established made this continuous improvement process seamless and effective.</p>
+       <h4>Maintaining token integrity</h4>
+       <p>To prevent token bloat and maintain cohesion, I established a rule: a new token must be used at least three times across independent components before formal inclusion. Each token underwent a trial period in Figma before being finalized. This ensured thoughtful implementation and system-wide harmony.</p>
+       
+       <FullImage 
+      image={mosaik_components}
+      caption="A selection of components I've designed and built in Figma, from smallest atom to more complex organism."
+      />
+        <h2>Design system in practice</h2>
+        <h3>Atoms to organisms</h3>
+        <p>Mosaik was designed to be intuitive for all users. Every detail—no matter how small—was crafted with the intent of reducing friction and cognitive load. Regardless of who you were, my goal was that you wouldn't have to think about what you're seeing on the screen—you could simply scan, click, and go.</p>
+
+        <h4>Research and inventory</h4>
+        <p>I audited HSB’s services to identify key components and mapped these against successful systems from IBM, Google, Atlassian, Adobe, and IKEA. This helped prioritize which components were essential and which were out of scope.</p>
+
+        <h4>Process and QA</h4>
+        <p>Each component followed a two-week lifecycle: ideation, testing, construction, and documentation. Components were only added when existing ones couldn’t solve the problem, helping prevent redundancy and boost UX consistency.</p>
+
+        <h4>User testing and feedback loops</h4>
+        <p>We tested components through interactive prototypes, preference and A/B tests (via Hotjar), and interviews via Teams. These insights often led to fundamental improvements in patterns and tokens. Because of Mosaik’s atomic structure, improvements could be implemented across the system instantly—making iteration fast, efficient, and user-centered.</p>
       </div>
 
+      <div class ="case-text">
       <FullImage 
-      image={mosaik_img}
-      caption="Front page of the launched hi-fi prototype."
-      />
+        image={mosaik_img_btn}
+        caption="A page from a presentation explaining how design tokens work."
+        />
+        <h3>Stakeholders and Business Strategy</h3>
+        <h4>Demystifying Design Systems</h4>
+        <p>To build buy-in and literacy, I presented Mosaik during company-wide PI Planning events (200+ attendees) and in smaller stakeholder sessions. I used visual metaphors—like Lego blocks—to help non-designers build a mental model of how the system works and why it matters.</p> 
+        <p>Multiple colleagues approached me afterward to express how much the sessions improved their understanding and trust in the design process.</p>
+
+        <h4>Starting a Community of Practice</h4>
+        <p>At the start, developers were siloed, with little cross-team collaboration. I formed a Community of Practice—a dedicated space for experienced devs to co-create the technical foundation of Mosaik.</p>
+        <p>The group helped future-proof the system, align business goals with technical feasibility, and encourage better communication between decision-makers and implementers.</p>
+      </div>
+
+      <div class ="case-text">
+        <h3>Challenges and how I solved them</h3>
+        <h4>Time and prioritization</h4>
+        <p>I was the only person working on Mosaik full-time while also handling other product design responsibilities. To stay on track, I maintained a personal Trello board and practiced transparent communication with my team and Product Owner—proactively flagging risks and trade-offs as they arose.</p>
+        
+        <h4>Balancing control with creative freedom</h4>
+        <p>Previously, too much design freedom led to visual inconsistency. I introduced a constrained spacing system based on an exponential 8px scale (inspired by Tailwind CSS). By eliminating ambiguous “medium” values, designers were nudged into using deliberate, intentional spacing—resulting in cleaner, more unified interfaces.</p>
+      </div>
+
+      <div class ="case-text">
+        <h3>Result</h3>
+        <p>Today, Mosaik is embedded in HSB Affärsstöd’s digital strategy. It has dramatically improved product quality and development speed. In usability tests:
+
+          <ul>A redesigned legacy product saw its Hotjar satisfaction score rise from 2.4 to 4.6.</ul>
+
+          <ul>UMUX scores consistently show higher usability and appeal for Mosaik-based products.</ul>
+
+          <ul>Users describe products using Mosaik as "intuitive," "easy," and "clean."</ul>
+
+          <ul>Development times have dropped from months to weeks for new features.</ul>
+
+        The system has brought measurable benefits to users, designers, and developers—saving time, reducing costs, and improving satisfaction across the board.</p>
+        
+        <h4>What's next for Mosaik?</h4>
+        <p>As a living product, Mosaik must continue to grow, adapt, and evolve. Continuous testing and iterative development will be essential to maintain its current usability standards.</p>
+      <p>Due to recent organizational changes, Mosaik no longer has a dedicated governance structure. I’ve stepped down from the Lead role to focus on product design, but I strongly recommend establishing a dedicated Design System Team to maintain vision, quality, and strategic alignment.</p>
+      </div>
+
+      <div class ="case-text">
+        <h3>What I learned</h3>
+        <p>Working on Mosaik for 2.5 years has been one of the most formative experiences of my career. Some challenges only revealed themselves with time—and that’s okay. Every design system evolves through trial, error, and iteration.</p>        
+        <p>If I could do it again, I’d push even harder for early-stage UX research to build stronger foundations. Still, I’m very proud of the system’s impact and of the collaborative culture it fostered across design and engineering.</p>
+      </div>
+
       {/* 
       <div className="case-text">
         <h3>Putting everything together</h3>
@@ -111,8 +147,6 @@ function MosaikContent(props) {
         </p>
       </div>
       */}
-
-      <BackToTop />
 
     </div>
 

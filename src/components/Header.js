@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'; 
+import logo from './assets/favicon.png';
 
 function Header() {
 
@@ -11,7 +12,7 @@ function Header() {
     <div>
 
         <div className="navigation">
-            <NavLink to="/" id="website-title" onClick={()=>setShow(false)} > Sascha Hjorth <span id="blinkstar"> 🎨 </span> </NavLink><br></br>
+            <NavLink to="/" id="website-title" onClick={()=>setShow(false)} > Sascha Hjorth <span id="blinkstar">  </span> </NavLink><br></br>
 
             <div className="navigation-sub">
                                             
@@ -22,7 +23,7 @@ function Header() {
 
             </div>
 
-            <i class="fas fa-bars" style={{ color: show? '#c1ff64' : 'rgb(250, 250, 250)' }} onClick={()=>setShow(!show)} ></i> {/* Gör tvärtemot vad än show har för värde */}
+            <i class="fas fa-bars" style={{ color: show? '#001bb6' : '#fff' }} onClick={()=>setShow(!show)} ></i> {/* Gör tvärtemot vad än show har för värde */}
 
         </div>
 

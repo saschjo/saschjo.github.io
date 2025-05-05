@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import Projects from './components/Projects.js'; 
 import About from './components/About.js';
-import { Remap, Internetskolan, Codimals, SustainLab, Leo, Legimeet } from './components/Cases.js';  
+import { Remap, Internetskolan, Codimals, SustainLab, Leo, Legimeet, MittUppdrag } from './components/Cases.js';  
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Home from './components/Home.js';
@@ -21,6 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
+            <Route path="/MittUppdrag" element={<MittUppdrag />} />
             <Route path="/Mosaik" element={<Mosaik />} />
             <Route path="/Remap" element={<Remap />} />
             <Route path="/Internetskolan" element={<Internetskolan />} />

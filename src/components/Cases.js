@@ -1,5 +1,6 @@
 import React from "react"
 import ProjectObject from './portfolio-object.js';
+import MittUppdragContent from './MittUppdragContent.js';
 import RemapContent from './RemapContent.js';
 import SwAnimalsContent from './SwAnimalsContent.js';
 import InternetskolanContent from './InternetskolanContent.js';
@@ -7,12 +8,32 @@ import SustainlabContent  from './SustainlabContent.js';
 import LegimeetContent from './LegimeetContent.js';
 import LeoContent from "./LeoContent.js";
 import MosaikContent from "./MosaikContent.js";
-import PovbContent from "./PovbContent.js";
 import mosaik_thumb from './assets/mosaik/mosaik_thumb.png';
 import remap_1 from './assets/remap/remap_1.jpg';
 import internetskolan_framsida from './assets/internetskolan/internetskolan_framsida.gif';
 import rav from './assets/swedishanimals/rav.gif';
 import legimeet_vote from "./assets/legimeet/legimeet_vote.gif";
+import mitt_uppdrag from "./assets/Verktyg_ Grid.png";
+
+function MittUppdrag(props) {
+
+  return (
+          <div className="project-1">
+              <ProjectObject
+                image={mitt_uppdrag}
+                title="Nya Mitt Uppdrag"
+                category="Design System"
+                client=" HSB Affärsstöd"
+                mission=" Custom Atomic Design System"
+                myrole=" Design Lead and UX/UI Engineer"
+                datum="2021 – Ongoing"
+                description="HSB, a top Swedish housing management cooperative, manages homes for 1 in 10 Swedes. They offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
+                  />
+              <MittUppdragContent />
+
+          </div>
+  )
+}
 
 function Mosaik(props) {
 
@@ -23,9 +44,9 @@ function Mosaik(props) {
                 title="Mosaik Design System"
                 category="Design System"
                 client=" HSB Affärsstöd"
-                mission=" Custom Design System"
+                mission=" Custom Atomic Design System"
                 myrole=" Design Lead and UX/UI Engineer"
-                datum="2021 – Ongoing"
+                datum="2022 – Ongoing"
                 description="HSB, a top Swedish housing management cooperative, manages homes for 1 in 10 Swedes. They offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
                   />
               <MosaikContent />
@@ -42,10 +63,10 @@ function Remap(props) {
                   image={remap_1}
                   title="Re:Map"
                   category="Graphic and Product Design"
-                  uppdragstyp=" School project"
-                  mission=" Pitch material and graphic identity"
-                  myrole=" Product-, Graphic- and Motion Designer"
-                  datum=" Three weeks (Dec. 2020 – Jan. 2021)"
+                  client="Creative project"
+                  mission="Pitch material and graphic identity"
+                  myrole="Product-, Graphic- and Motion Designer"
+                  datum="Three weeks (Dec. 2020 – Jan. 2021)"
                   description="Re:Map was a creative venture where we crafted pitch material, including a graphic identity and short film, for a design solution developed by classmates. Choosing to work on Re:Map, we embraced a modern punk concept to inspire teens through action, creativity, and teamwork. The project received high praise from both classmates and teachers, and to this day it's one of my favorite projects I've ever worked on."
                     />
                 <RemapContent />
@@ -63,9 +84,9 @@ function Internetskolan(props) {
                   image={internetskolan_framsida}
                   title="Internetskolan"
                   category="Product, UX/UI Design and Development"
-                  uppdragstyp=" Live client project"
+                  client=" Spånga-Tensta municipality administration"
                   mission=" Solving the digital divide in Spånga-Tensta"
-                  myrole=" Product-, UX/UI Designer and Web Developer"
+                  myrole=" Product-, UI Designer and Frontend Developer"
                   datum=" 1 month (Spring of 2021)"
                   description="Internetskolan (The Internet School) was a project performed on behalf of the Spånga-Tensta municipality administration in collaboration with Södertörn University. The administration wanted us to produce potential solutions to the digital divide in the municipality. Through user research, testing and client feedback, we produced Internetskolan, a place where digital beginners could learn the basics of the internet and get started on their online journey. The project was lauded by both our teachers and Spånga-Tensta administration, who wished to pursue- and work on it further right away! "
                 />
@@ -155,32 +176,6 @@ function SustainLab(props) {
 
 }
 
-function povb(props) {
-
-  return (
-        // Render a Thumbnail component
-      <div className="container-project">
-        <div className="project-container">
-          <div className="project-1">
-              <ProjectObject
-                  title="Plåt & Vent-byrån"
-                  category="Graphic Identity and UX/UI Design"
-                  uppdragstyp=" Client project"
-                  mission=" Website and logo design"
-                  myrole=" Project Manager, UX/UI Designer and Developer"
-                  datum=" Fall of 2020 – Spring of 2021"
-                  description="SustainLab-SH is a venture of the Environmental Science Department, Södertörn University. They recruited me and my project partner David Wechana to create a website for them that they would be able to update themselves, share their research, as well publish posts. They also needed a logo for this venture. We realized this project in Wordpress and Elementor, utilizing user research and testing to validate the project iteratively throughout. The client was very happy with the result."
-                />
-
-              <PovbContent />
-
-          </div>
-        </div>
-      </div>
-  )
-
-}
-
 function Legimeet(props) {
 
   return (
@@ -209,12 +204,12 @@ function Legimeet(props) {
 }
  
 export {
+  MittUppdrag,
   Mosaik,
   Remap,
   Internetskolan,
   Codimals,
   SustainLab,
-  povb,
   Leo,
   Legimeet
 }

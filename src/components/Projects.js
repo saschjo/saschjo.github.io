@@ -6,6 +6,7 @@ import remap_thumb from './assets/remap_thumb.png';
 import codimals_thumb from './assets/codimals_thumb.png';
 import internetskolan_thumb from './assets/internetskolangif.gif';
 import sustainlab_thumb from './assets/sustainlab/sustainlab_thumb.png';
+import mitt_uppdrag from './assets/Verktyg_ Grid.png';
 import leo_thumb from './assets/leo/leo_thumb.png';
 import legimeet_thumb from './assets/legimeet/legimeeet_thumb.png';
 
