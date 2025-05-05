@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.14d0ef4d.css",
-    "main.js": "/static/js/main.dc0fdfca.js",
+    "main.css": "/static/css/main.c7971795.css",
+    "main.js": "/static/js/main.6b081646.js",
     "static/media/minprofil.png": "/static/media/minprofil.b252c35d578fc2f898c9.png",
     "static/media/mosaik_thumb.png": "/static/media/mosaik_thumb.5369936c17e0185d913b.png",
+    "static/media/mosaik-tokens.png": "/static/media/mosaik-tokens.7dfee13ffc50764195de.png",
+    "static/media/mosaik-sizing.png": "/static/media/mosaik-sizing.c3d70af2f39fa22cb0d3.png",
     "static/media/mosaik_img_comp.gif": "/static/media/mosaik_img_comp.ff9782779f7e6aa21dd4.gif",
     "static/media/ui_ux.gif": "/static/media/ui_ux.f4995e32beb5cd47c8aa.gif",
+    "static/media/modals.png": "/static/media/modals.9ef9033bc7c480659b5b.png",
     "static/media/sustainlab_head.gif": "/static/media/sustainlab_head.41985d5f6d2be259ef1a.gif",
     "static/media/internetskolan_framsida.gif": "/static/media/internetskolan_framsida.72a219a39c1f5fd7b250.gif",
-    "static/media/me_2024.jpg": "/static/media/me_2024.5023f71d04fd50d98d8f.jpg",
+    "static/media/data table.png": "/static/media/data table.ce0701abbcf575853e5f.png",
+    "static/media/mosaik-components.png": "/static/media/mosaik-components.1dc4b2668595c786cd1e.png",
     "static/media/remap_5.png": "/static/media/remap_5.b667803cf221e696689f.png",
     "static/media/remap_screens_before.png": "/static/media/remap_screens_before.ea91c8ca915f6bad6b99.png",
+    "static/media/mosaik-colors.png": "/static/media/mosaik-colors.7c86b47655f1a67e2df2.png",
     "static/media/rav.gif": "/static/media/rav.aea23196309e1681f0c2.gif",
     "static/media/legimeet_vote.gif": "/static/media/legimeet_vote.05092ecd1b65ee9b0f8a.gif",
     "static/media/first_fox.png": "/static/media/first_fox.8e7046ae808742dfc90b.png",
@@ -30,10 +35,12 @@
     "static/media/bjorn.gif": "/static/media/bjorn.c5b4341af612e1097a82.gif",
     "static/media/internetskolan_overview.png": "/static/media/internetskolan_overview.0a8285e57f0a7ef32203.png",
     "static/media/remap_3.jpg": "/static/media/remap_3.3d1921d50ed063d58b6b.jpg",
+    "static/media/Verktyg_ Grid.png": "/static/media/Verktyg_ Grid.1e952f4d3f4695660a9d.png",
     "static/media/remap_paper_storyboard.png": "/static/media/remap_paper_storyboard.4064b9258341ddf13feb.png",
     "static/media/internetskolan_hifi_wireframes1.png": "/static/media/internetskolan_hifi_wireframes1.f24656ecc873e463f2ca.png",
     "static/media/internetskolan_finalhifi.png": "/static/media/internetskolan_finalhifi.ae2ad336fae3b0b5bd87.png",
     "static/media/internetskolan_personas.png": "/static/media/internetskolan_personas.4f5e5419b8a9426c8fec.png",
+    "static/media/DSC06868.jpg": "/static/media/DSC06868.ae7f358ec0e73a4ba45d.jpg",
     "static/media/leo_box.png": "/static/media/leo_box.5da9dc502e09bfb233c9.png",
     "static/media/sustainlab_lofi.jpg": "/static/media/sustainlab_lofi.31efb0a7b73e998ba8e2.jpg",
     "static/media/internetskolan_coloriteration.png": "/static/media/internetskolan_coloriteration.2c0283051bdc9325ba32.png",
@@ -65,19 +72,18 @@
     "static/media/remap-slogan.jpg": "/static/media/remap-slogan.a12b19b7ff457c08d2f5.jpg",
     "static/media/mosaik_img_icons.png": "/static/media/mosaik_img_icons.0018a6b1407d06474184.png",
     "static/media/remap_logo.jpg": "/static/media/remap_logo.f695d0466dfc789aa5bf.jpg",
+    "static/media/favicon.png": "/static/media/favicon.3c1f86e56ba2e0b8c44e.png",
     "static/media/mosaik_img_cover.png": "/static/media/mosaik_img_cover.931ec3cf6e52ba096b7a.png",
     "static/media/internetskolan_lilalinjen.png": "/static/media/internetskolan_lilalinjen.9e96197a59406eeafae1.png",
     "static/media/sustainlab_thumb.png": "/static/media/sustainlab_thumb.238c5a96577a75ead37a.png",
-    "static/media/Dirtyline 36daysoftype 2022.ttf": "/static/media/Dirtyline 36daysoftype 2022.82e068197b6c7ead5cab.ttf",
     "static/media/leo_logos.png": "/static/media/leo_logos.29c7103c879c43716729.png",
-    "static/media/Dirtyline 36daysoftype 2022.woff": "/static/media/Dirtyline 36daysoftype 2022.3350dd5819ed000b6d1a.woff",
-    "static/media/Dirtyline 36daysoftype 2022.woff2": "/static/media/Dirtyline 36daysoftype 2022.f210943d76773907e940.woff2",
+    "static/media/placeholder.png": "/static/media/placeholder.aceefdb599ab5bb44ebf.png",
     "index.html": "/index.html",
-    "main.14d0ef4d.css.map": "/static/css/main.14d0ef4d.css.map",
-    "main.dc0fdfca.js.map": "/static/js/main.dc0fdfca.js.map"
+    "main.c7971795.css.map": "/static/css/main.c7971795.css.map",
+    "main.6b081646.js.map": "/static/js/main.6b081646.js.map"
   },
   "entrypoints": [
-    "static/css/main.14d0ef4d.css",
-    "static/js/main.dc0fdfca.js"
+    "static/css/main.c7971795.css",
+    "static/js/main.6b081646.js"
   ]
 }
