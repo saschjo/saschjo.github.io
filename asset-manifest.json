@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b60cdc70.css",
-    "main.js": "/static/js/main.2f7f6419.js",
+    "main.css": "/static/css/main.a027a4f8.css",
+    "main.js": "/static/js/main.ac9f6a42.js",
     "static/media/minprofil.png": "/static/media/minprofil.b252c35d578fc2f898c9.png",
     "static/media/mosaik_thumb.png": "/static/media/mosaik_thumb.5369936c17e0185d913b.png",
     "static/media/mosaik-tokens.png": "/static/media/mosaik-tokens.7dfee13ffc50764195de.png",
@@ -79,11 +79,11 @@
     "static/media/leo_logos.png": "/static/media/leo_logos.29c7103c879c43716729.png",
     "static/media/placeholder.png": "/static/media/placeholder.aceefdb599ab5bb44ebf.png",
     "index.html": "/index.html",
-    "main.b60cdc70.css.map": "/static/css/main.b60cdc70.css.map",
-    "main.2f7f6419.js.map": "/static/js/main.2f7f6419.js.map"
+    "main.a027a4f8.css.map": "/static/css/main.a027a4f8.css.map",
+    "main.ac9f6a42.js.map": "/static/js/main.ac9f6a42.js.map"
   },
   "entrypoints": [
-    "static/css/main.b60cdc70.css",
-    "static/js/main.2f7f6419.js"
+    "static/css/main.a027a4f8.css",
+    "static/js/main.ac9f6a42.js"
   ]
 }
