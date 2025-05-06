@@ -70,20 +70,27 @@ function Projects(props) {
                 />
                 <div className="thumbnail-container">
 
-                    <Thumbnail
-                        link="/Codimals"
-                        image={codimals_thumb}
-                        title="Codimals"
-                        category="✧ Product, UX/UI Design and Development"
-                        desc="An evocative, interactive web experience made in p5.js allowing children to explore parts of the Swedish ecosystem."
-                    />
-
-                    <Thumbnail
+                <Thumbnail
                         link="/Legimeet"
                         title="Legimeet"
                         image={legimeet_thumb}
                         desc="UI/UX design and development work for Legimeet, an exciting startup offering easy solutions for digital AGMs."
-                        category="✧ UX/UI Design and Development"
+                        category={<div className="categories">
+                            <span className="tag">UX/UI Design</span>
+                            <span className="tag">Frontend development</span>
+                            </div>}
+                    />
+
+                    <Thumbnail
+                        link="/Codimals"
+                        image={codimals_thumb}
+                        title="Codimals"
+                        category={<div className="categories">
+                            <span className="tag">Product Design</span>
+                            <span className="tag">Frontend development</span>
+                            <span className="tag">Product Design</span>
+                            </div>}
+                        desc="An evocative, interactive web experience made in p5.js allowing children to explore parts of the Swedish ecosystem."
                     />
 
                     {/* 

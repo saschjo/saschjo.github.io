@@ -12,8 +12,7 @@ function Footer() {
                 </div>
                 <div className="contact-details">
                     <h4>Contact me directly!👋</h4>
-                    <a href={'mailto:saschahjo@gmail.com'}>saschahjo@gmail.com</a>
-                    <p>I work as a consultant at Nexer Maverick in Stockholm.</p>
+                    <a href={'mailto:saschjo@proton.me'}>saschjo@proton.me</a>
                 </div>
             </span>
         </div>

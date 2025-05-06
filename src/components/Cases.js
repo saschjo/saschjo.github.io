@@ -88,7 +88,7 @@ function Internetskolan(props) {
                   mission=" Solving the digital divide in Spånga-Tensta"
                   myrole=" Product-, UI Designer and Frontend Developer"
                   datum=" 1 month (Spring of 2021)"
-                  description="Internetskolan (The Internet School) was a project performed on behalf of the Spånga-Tensta municipality administration in collaboration with Södertörn University. The administration wanted us to produce potential solutions to the digital divide in the municipality. Through user research, testing and client feedback, we produced Internetskolan, a place where digital beginners could learn the basics of the internet and get started on their online journey. The project was lauded by both our teachers and Spånga-Tensta administration, who wished to pursue- and work on it further right away! "
+                  description="Internetskolan (The Internet School) was a project performed on behalf of the Spånga-Tensta municipality administration in collaboration with Södertörn University. The administration wanted us to produce potential solutions to the digital divide in the municipality. Through user research, testing and client feedback, we produced Internetskolan, a place where digital beginners could learn the basics of the internet and get started on their online journey. The project was lauded by the client, who wished to pursue- and work on it further right away! "
                 />
 
               <InternetskolanContent />
@@ -108,7 +108,7 @@ function Codimals(props) {
                   image={rav}
                   title="Codimals"
                   category="Product-, UX/UI Design and Development"
-                  uppdragstyp=" School project"
+                  uppdragstyp=" Creative project"
                   mission=" Interactive web experience in p5.js"
                   myrole=" Designer, developer and illustrator"
                   datum=" Two weeks (Fall of 2020)"

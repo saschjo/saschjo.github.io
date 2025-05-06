@@ -31,7 +31,7 @@ function InternetskolanContent(props) {
       />
 
       <div className="visit-case-subject">
-        <a href={'https://amhjo.github.io/internetskolan/'}>Experience Internetskolan here →</a>
+        <a href={'https://saschjo.github.io/internetskolan/'}>Experience Internetskolan here →</a>
         <p>* This prototype is not responsive, and works best on 13" screens.</p>
       </div>
 
@@ -243,8 +243,6 @@ function InternetskolanContent(props) {
       <p>Through working on this project, I learned a lot more about working with different demographics, the usefulness and necessity of proper user research, and gained more confidence in my UI and web development abilities. Working solely on this project for a whole month was a true joy, and by the end I was so excited about it all I wanted was to keep working on it. Finally, I learned more about working with surveys, data gathering and user testing to create a bespoke, user centered design solution.</p>
     </div>
 
-
-    <BackToTop />
     
     </div>
 

@@ -39,10 +39,6 @@ function LegimeetContent(props) {
       </div>
 
 
-
-
-      <BackToTop />
-
     </div>
 
   )
