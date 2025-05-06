@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7477fe93.css",
+    "main.css": "/static/css/main.8aaf5d4c.css",
     "main.js": "/static/js/main.486489f4.js",
     "static/media/minprofil.png": "/static/media/minprofil.b252c35d578fc2f898c9.png",
     "static/media/mosaik_thumb.png": "/static/media/mosaik_thumb.5369936c17e0185d913b.png",
@@ -79,11 +79,11 @@
     "static/media/leo_logos.png": "/static/media/leo_logos.29c7103c879c43716729.png",
     "static/media/placeholder.png": "/static/media/placeholder.aceefdb599ab5bb44ebf.png",
     "index.html": "/index.html",
-    "main.7477fe93.css.map": "/static/css/main.7477fe93.css.map",
+    "main.8aaf5d4c.css.map": "/static/css/main.8aaf5d4c.css.map",
     "main.486489f4.js.map": "/static/js/main.486489f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7477fe93.css",
+    "static/css/main.8aaf5d4c.css",
     "static/js/main.486489f4.js"
   ]
 }
