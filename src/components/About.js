@@ -44,9 +44,9 @@ function About(props) {
               <h3>Design tools</h3>
               <p>I'm highly proficient in Figma, which is my tool of choice for building components and prototypes. I enjoy lo-fi prototyping by hand and illustrating storyboards and visuals to get stakeholders onboard. I'm passionate about team collaboration, often through leading workshops and design sprints.</p>
               <h3>Development experience</h3>
-              <p>My toolkit includes HTML, CSS, JS, as well as experience with React.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart, Flutter, Wordpress, and Webflow. I love creating with code – like this website, for example, which is built from scratch in React.js and SASS (no AI! ;))</p> 
+              <p>I really enjoy designing as I code. My toolkit includes HTML, CSS, JS, as well as experience with React.js, Angular.js, SASS, Node.js, p5.js, jQuery, PHP, MySQL, C#, Git, Dart, Flutter, Wordpress, and Webflow.</p> 
               <h3>Outside of work</h3>
-              <p>I enjoy getting creative any way I can! I love painting, working with clay, gaming, playing Dungeons and Dragons and spending time with friends. </p>
+              <p>I enjoy getting creative any way I can! I love painting, and right now I'm really into working with clay. I love cooking, gaming, playing Dungeons and Dragons and spending time with friends. I also run a Pysselklubb (Craft Club) and make music sometimes!</p>
             </div>
           </div>
         </div>
