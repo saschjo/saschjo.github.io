@@ -69,19 +69,7 @@ function Projects(props) {
                 subHeadline="A short and sweet display of smaller projects"
                 />
                 <div className="thumbnail-container">
-
                 <Thumbnail
-                        link="/Legimeet"
-                        title="Legimeet"
-                        image={legimeet_thumb}
-                        desc="UI/UX design and development work for Legimeet, an exciting startup offering easy solutions for digital AGMs."
-                        category={<div className="categories">
-                            <span className="tag">UX/UI Design</span>
-                            <span className="tag">Frontend development</span>
-                            </div>}
-                    />
-
-                    <Thumbnail
                         link="/Codimals"
                         image={codimals_thumb}
                         title="Codimals"
@@ -91,6 +79,16 @@ function Projects(props) {
                             <span className="tag">Product Design</span>
                             </div>}
                         desc="An evocative, interactive web experience made in p5.js allowing children to explore parts of the Swedish ecosystem."
+                    />
+                <Thumbnail
+                        link="/Legimeet"
+                        title="Legimeet"
+                        image={legimeet_thumb}
+                        desc="UI/UX design and development work for Legimeet, an award-winning startup offering a digital solution for AGMs."
+                        category={<div className="categories">
+                            <span className="tag">UX/UI Design</span>
+                            <span className="tag">Frontend development</span>
+                            </div>}
                     />
 
                     {/* 

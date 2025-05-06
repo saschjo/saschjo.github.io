@@ -21,11 +21,6 @@ function SwAnimalsContent(props) {
       caption=""
       />
       
-      <div className="visit-case-subject">
-        <a href={'http://mi.sh.se/~19anhj/DIK/Slutprojekt%20Kreativ%20Programmering%202/'}>Experience Codimals here!</a>
-        <p>* This experience is not responsive, and works best on 13" screens.</p>
-      </div>
-      
 
       <div className="case-text">
         <h3>Introduction</h3>

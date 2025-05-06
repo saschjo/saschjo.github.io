@@ -45,7 +45,7 @@ function Mosaik(props) {
                 category="Design System"
                 client=" HSB Affärsstöd"
                 mission=" Custom Atomic Design System"
-                myrole=" Design Lead and UX/UI Engineer"
+                myrole=" Design System Lead and UI/UX Engineer"
                 datum="2022 – Ongoing"
                 description="HSB, a top Swedish housing management cooperative, manages homes for 1 in 10 Swedes. They offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
                   />
@@ -88,7 +88,9 @@ function Internetskolan(props) {
                   mission=" Solving the digital divide in Spånga-Tensta"
                   myrole=" Product-, UI Designer and Frontend Developer"
                   datum=" 1 month (Spring of 2021)"
-                  description="Internetskolan (The Internet School) was a project performed on behalf of the Spånga-Tensta municipality administration in collaboration with Södertörn University. The administration wanted us to produce potential solutions to the digital divide in the municipality. Through user research, testing and client feedback, we produced Internetskolan, a place where digital beginners could learn the basics of the internet and get started on their online journey. The project was lauded by the client, who wished to pursue- and work on it further right away! "
+                  description="Internetskolan (The Internet School) was a project for the Spånga-Tensta municipality in collaboration with Södertörn University, aimed at addressing the local digital divide. Based on user research, testing, and feedback, we created a beginner-friendly platform to help residents get started online. The client loved the finished result, and our test-users felt that our product could really help them in their digital journey."
+                  link={<a href={'https://saschjo.github.io/internetskolan/'}>Experience Internetskolan here →</a>}
+
                 />
 
               <InternetskolanContent />
@@ -108,11 +110,12 @@ function Codimals(props) {
                   image={rav}
                   title="Codimals"
                   category="Product-, UX/UI Design and Development"
-                  uppdragstyp=" Creative project"
+                  client=" Creative school project"
                   mission=" Interactive web experience in p5.js"
-                  myrole=" Designer, developer and illustrator"
+                  myrole=" UX/UI Designer, Developer, Illustrator and Animator"
                   datum=" Two weeks (Fall of 2020)"
                   description="Codimals was a project I was a part of during the class Creative Programming (7,5hp) during fall 2020. We were tasked with creating an interactive web experience on the theme of sustainability and nature, using the JavaScript library p5.js. Using design thinking and different design methods, we produced Codimals as an evocative experience for children to learn about the Swedish ecosystem. Codimals was met with a lot of praise, especially for our music and illustrations."
+                  link={<a href={'http://mi.sh.se/~19anhj/DIK/Slutprojekt%20Kreativ%20Programmering%202/'}>Experience Codimals here →</a>}
                 />
 
               <SwAnimalsContent />

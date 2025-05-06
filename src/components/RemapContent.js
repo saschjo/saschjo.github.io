@@ -194,7 +194,7 @@ function RemapContent(props) {
       <div className="case-text">
         <h3> The result</h3>
         <h4>Pitch presentation</h4>
-        <p>Our project was an immense success. During the presentation, our project was deemed one of the best the program has ever seen, and was given very high praise by both our teachers and classmates. Re:Map was described by one teacher as being able to bring a hopeful rebellious spirit into a dull, “overdog” world. The visual hierarchy, scope and voice of the project were met with high praise from both our teachers and guest lecturer visual- and UX designer Andreas Carlsson.</p>
+        <p>Our project was an immense success. Re:Map was described by one attendee as being able to bring a hopeful rebellious spirit into a dull, “overdog” world. The visual hierarchy, scope and voice of the project were met with high praise.</p>
         <p>In the end, we felt that we definitely met the goals we’d set out to achieve at the start of the project, and we’re very happy with having achieved it in such a short amount of time, as well as working 100% remotely.</p>
         <h4>Future development</h4>
         <p>Since user testing wasn’t a part of the project, we didn’t receive any user feedback or opinions from actual teenagers beyond the user research we inherited. Thus, it would be amazing to be able to test the reception of Re:Map through focus groups, and iterate further on the design to fit their wants, wishes and needs.</p>

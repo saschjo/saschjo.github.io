@@ -24,16 +24,11 @@ import BackToTop from "./BackToTop.js";
 function InternetskolanContent(props) {
   return (
     <div className="InnerCaseWrapper">
-
+      
       <FullImage 
       image={internetskolan_framsida}
       caption="Front page of the launched hi-fi prototype."
       />
-
-      <div className="visit-case-subject">
-        <a href={'https://saschjo.github.io/internetskolan/'}>Experience Internetskolan here →</a>
-        <p>* This prototype is not responsive, and works best on 13" screens.</p>
-      </div>
 
       <div className="case-text">
         <h3>Introduction</h3>
