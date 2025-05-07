@@ -15,13 +15,9 @@ function LegimeetContent(props) {
       caption="One of the voting modules as well as a more minimal menu UI I designed in the Legimeet demo."
       />
 
-      <div className="visit-case-subject">
-        <a href={'https://www.legimeet.com/demo'}>See more of the demo here</a>
-      </div>
-
       <div className="case-text">
         <h3>About the project</h3>
-        <p>Legimeet is a startup company that offers digital Annual General Meetings (AGMs) as a service through the Twebcast platform. The platform offers a variety of interactive modules that can be used to create different projects, meetings and even conferences. These modules can be styled quite freely through HTML, CSS, and JS.</p> 
+        <p>Legimeet is an Financial Times award-winning startup company that offers digital Annual General Meetings (AGMs) as a service through the Twebcast platform. The platform offers a variety of interactive modules that can be used to create different projects, meetings and even conferences. These modules can be styled quite freely through HTML, CSS, and JS.</p> 
         <p>As Legimeet is a small startup, they needed a designer who could also develop using HTML and CSS, and so I was brought onboard to work on some of their AGMs as well as the modules used in their demo. Eventually, I also got to work on some graphic design for their social media, webinars and product listing.</p>
         <h4>A fast paced startup</h4>
         <p>As I was only at Legimeet one day a week as well as the only designer, the work pace was very fast, with designs often being commissioned, designed and implemented in a day. This lead to an agile approach where new designs were produced, evaluated by the team and then iterated upon. Since each AGM consisted of several different modules that each needed a unique design, both speed and iteration were key. For overarching visual themes, I used Figma, Adobe XD and Illustrator before diving into development. However, I oftentimes designed straight in the CSS in order to test several ideas quickly, due to the design constraints of the Twebcast modules not always being clear until after the fact. For example, every design had to look good in both a wide- and medium screen mode without using media queries.</p>

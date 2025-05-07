@@ -190,9 +190,10 @@ function Legimeet(props) {
                   image={legimeet_vote}
                   title="Legimeet"
                   category="UX/UI Design and Development"
+                  client=" Legimeet AB"
                   uppdragstyp=" Client Project"
-                  mission=" UX/UI Development and design"
-                  myrole=" UX/UI Developer and designer"
+                  mission=" Engineer and design AGM UI for clients"
+                  myrole=" UX/UI Engineer and Graphic Designer"
                   datum=" Feb. 2021 – Sept. 2021"
                   description="Legimeet is an exciting startup company offering to build, host and send live digital Annual General Meetings (AGMs) through the Twebcast platform. I was brought in to work on UX/UI development and design for a series of AGMs and projects, which allowed me to combine my skills as a designer and developer at the same time. I mainly worked with HTML, CSS and some light JS during this time. I got to work on designing AGMs for clients such as Taxi Stockholm, Gigger and Landshypotek. As I was the only designer, I occasionally also produced graphic material."
                 />

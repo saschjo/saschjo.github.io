@@ -26,7 +26,7 @@ function MosaikContent(props) {
 
     <FullImage 
       image={mosaik_datatable}
-      caption="A data table component designed to be flexible and reusable across different contexts. The design is atomic, meaning that each part (down to every cell and its contents) is its own component in Figma."
+      caption="A data table component I designed to be flexible and reusable across different contexts. The construction is atomic, meaning that each part (down to every cell and its contents) is its own component in Figma."
       />
 
     <div className="case-text">

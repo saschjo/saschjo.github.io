@@ -29,10 +29,10 @@ function Projects(props) {
                         image={mosaik_thumb}
                         desc="HSB offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
                         category={<div className="categories">
-                                <span className="tag">Design Lead</span>
-                                <span className="tag">Strategy</span>
+                                <span className="tag">Design System Lead</span>
+                                <span className="tag">UI Design</span>
                                 <span className="tag">UX Engineering</span>
-                                <span className="tag">UX/UI Design</span>
+                                <span className="tag">UX Strategy</span>
                                 </div>}
                     />
 
@@ -42,9 +42,9 @@ function Projects(props) {
                         title="Internetskolan"
                         desc="Product design and prototype development to bridge the digital divide, commissioned by Spånga-Tensta municipality administration."
                         category={<div className="categories">
-                            <span className="tag">Product design</span>
-                            <span className="tag">Frontend development</span>
+                            <span className="tag">Product Design</span>
                             <span className="tag">UX/UI Design</span>
+                            <span className="tag">Frontend development</span>
                             </div>}
                     />
 
@@ -54,8 +54,9 @@ function Projects(props) {
                         image={remap_thumb}
                         desc="Design concept, graphic identity and animation for a project aimed at inspiring teens to get involved in urban development."
                         category={<div className="categories">
-                            <span className="tag">Product design</span>
-                            <span className="tag">Graphic design</span>
+                            <span className="tag">Product Design</span>
+                            <span className="tag">Brand Identity</span>
+                            <span className="tag">Graphic Design</span>
                             <span className="tag">Motion Design</span>
                             </div>}
                     />
@@ -75,8 +76,8 @@ function Projects(props) {
                         title="Codimals"
                         category={<div className="categories">
                             <span className="tag">Product Design</span>
+                            <span className="tag">UX/UI Design</span>
                             <span className="tag">Frontend development</span>
-                            <span className="tag">Product Design</span>
                             </div>}
                         desc="An evocative, interactive web experience made in p5.js allowing children to explore parts of the Swedish ecosystem."
                     />
@@ -86,8 +87,9 @@ function Projects(props) {
                         image={legimeet_thumb}
                         desc="UI/UX design and development work for Legimeet, an award-winning startup offering a digital solution for AGMs."
                         category={<div className="categories">
+                            <span className="tag">UI Engineering</span>
                             <span className="tag">UX/UI Design</span>
-                            <span className="tag">Frontend development</span>
+                            <span className="tag">Graphic Design</span>
                             </div>}
                     />
 
