@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'; 
-import logo from './assets/favicon.png';
+import Orb from './assets/favicon.png';
 
 function Header() {
 
@@ -12,13 +12,14 @@ function Header() {
     <div>
 
         <div className="navigation">
-            <NavLink to="/" id="website-title" onClick={()=>setShow(false)} > Sascha Hjorth <span id="blinkstar">  </span> </NavLink><br></br>
+            <NavLink to="/" id="website-title" onClick={()=>setShow(false)} > <img id='logo-orb' src={Orb} alt="Logo"></img> Sascha Hjorth <span id="blinkstar">  </span> </NavLink><br></br>
 
             <div className="navigation-sub">
                                             
                 <NavLink to="/" className="nav-item">Home</NavLink>
-                <NavLink to="/projects" className="nav-item">Case Work</NavLink>
-                <NavLink to="/about" className="nav-item">About</NavLink>
+                <NavLink to="/projects" className="nav-item">Case studies</NavLink>
+                <NavLink to="/about" className="nav-item">About me</NavLink>
+                <NavLink to="/extras" className="nav-item">Fun stuff</NavLink>
                 { /* <NavLink to="/contact" className="nav-item">Contact</NavLink> */ }
 
             </div>

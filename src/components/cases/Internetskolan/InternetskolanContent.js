@@ -1,25 +1,23 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import internetskolan_moodboard from './assets/internetskolan/internetskolan_moodboard.png';
-import internetskolan_personas from './assets/internetskolan/internetskolan_personas.png';
-import internetskolan_behovsanalys from './assets/internetskolan/internetskolan_behovsanalys.png';
-import internetskolan_kravspec from './assets/internetskolan/internetskolan_kravspec.png';
-import internetskolan_lilalinjen from './assets/internetskolan/internetskolan_lilalinjen.png';
-import internetskolan_framsida from './assets/internetskolan/internetskolan_framsida.gif';
-import internetskolan_lofi from './assets/internetskolan/internetskolan_lofi.png';
-import internetskolan_coloriteration from './assets/internetskolan/internetskolan_coloriteration.png';
-import internetskolan_hifi_wireframes1 from './assets/internetskolan/internetskolan_hifi_wireframes1.png';
-import internetskolan_kodplan from './assets/internetskolan/internetskolan_kodplan.png';
-import internetskolan_overview from './assets/internetskolan/internetskolan_overview.png';
-import internetskolan_final1 from './assets/internetskolan/internetskolan_final1.png';
-import internetskolan_howmightwe from './assets/internetskolan/internetskolan_howmightwe.png';
-import internetskolan_insights from './assets/internetskolan/internetskolan_insights.png';
-import internetskolan_idegen from './assets/internetskolan/internetskolan_idegen.png';
-import internetskolan_trigger from './assets/internetskolan/internetskolan_trigger.png';
-import internetskolan_finalhifi from './assets/internetskolan/internetskolan_finalhifi.png';
-import internetskolan_illustrationer from './assets/internetskolan/illustrationer.jpg';
-
-import BackToTop from "./BackToTop.js";
+import FullImage from "../CaseCmpnts.js";
+import internetskolan_moodboard from './internetskolan/internetskolan_moodboard.png';
+import internetskolan_personas from './internetskolan/internetskolan_personas.png';
+import internetskolan_behovsanalys from './internetskolan/internetskolan_behovsanalys.png';
+import internetskolan_kravspec from './internetskolan/internetskolan_kravspec.png';
+import internetskolan_lilalinjen from './internetskolan/internetskolan_lilalinjen.png';
+import internetskolan_framsida from './internetskolan/internetskolan_framsida.gif';
+import internetskolan_lofi from './internetskolan/internetskolan_lofi.png';
+import internetskolan_coloriteration from './internetskolan/internetskolan_coloriteration.png';
+import internetskolan_hifi_wireframes1 from './internetskolan/internetskolan_hifi_wireframes1.png';
+import internetskolan_kodplan from './internetskolan/internetskolan_kodplan.png';
+import internetskolan_overview from './internetskolan/internetskolan_overview.png';
+import internetskolan_final1 from './internetskolan/internetskolan_final1.png';
+import internetskolan_howmightwe from './internetskolan/internetskolan_howmightwe.png';
+import internetskolan_insights from './internetskolan/internetskolan_insights.png';
+import internetskolan_idegen from './internetskolan/internetskolan_idegen.png';
+import internetskolan_trigger from './internetskolan/internetskolan_trigger.png';
+import internetskolan_finalhifi from './internetskolan/internetskolan_finalhifi.png';
+import internetskolan_illustrationer from './internetskolan/illustrationer.jpg';
  
 function InternetskolanContent(props) {
   return (

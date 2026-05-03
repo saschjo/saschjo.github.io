@@ -37,8 +37,8 @@ function About(props) {
               <button className="fact-button" onClick={funFact}>Click here for a fun fact! 🎉</button>
             </div>
             <div className="about-right">
-              <h1>About me</h1>
-              <p><strong>I'm a passionate human-centered designer specializing in design systems and sustainable, future-proof solutions. With half a decade of experience as a UX/UI Engineer and a lifetime of creativity, I seamlessly bridge the gap between business goals, user and end-product.</strong></p>
+              <h1>Sascha Hjorth</h1>
+              <p><strong>I'm a Senior Product Lead who codes, workshops and builds design systems .</strong></p>
               <h3>My approach</h3>
               <p>With a holistic, user-centered approach as my core, I employ UX strategy, design thinking, and an iterative workflow to achieve user needs and business goals. It's important for me to help create warm, safe environments where innovation excels through connection and trust. I enjoy creative, fast-paced environments and pride myself on having a beginner's mindset and being a natural problem solver.</p>
               <h3>Design tools</h3>

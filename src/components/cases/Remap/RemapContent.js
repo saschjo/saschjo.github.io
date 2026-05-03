@@ -1,22 +1,22 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import remap_1 from './assets/remap/remap_1.jpg';
-import remap_15 from './assets/remap/remap_15.jpg';
-import remap_personas from './assets/remap/remap_personas.jpg';
-import remap_personas2 from './assets/remap/remap_personas2.jpg';
-import remap_icon from './assets/remap/remap_icon.jpg';
-import remap_monster from './assets/remap/remap-monster.jpg';
-import remap_2 from './assets/remap/remap_2.png';
-import remap_3 from './assets/remap/remap_3.jpg';
-import remap_4 from './assets/remap/remap_4.png';
-import remap_5 from './assets/remap/remap_5.png';
-import remap_slogan from './assets/remap/remap-slogan.jpg';
-import remap_paper_storyboard from './assets/remap/remap_paper_storyboard.png';
-import remap_logo from './assets/remap/remap_logo.jpg'
-import remap_logo_sketches from './assets/remap/remap_logo_sketches.jpg'
-import remap_screens_before from './assets/remap/remap_screens_before.png'
-import remap_results from './assets/remap/remap_results.jpg';
-import BackToTop from "./BackToTop.js";
+import FullImage from "../CaseCmpnts.js";
+import remap_1 from './remap/remap_1.jpg';
+import remap_15 from './remap/remap_15.jpg';
+import remap_personas from './remap/remap_personas.jpg';
+import remap_personas2 from './remap/remap_personas2.jpg';
+import remap_icon from './remap/remap_icon.jpg';
+import remap_monster from './remap/remap-monster.jpg';
+import remap_2 from './remap/remap_2.png';
+import remap_3 from './remap/remap_3.jpg';
+import remap_4 from './remap/remap_4.png';
+import remap_5 from './remap/remap_5.png';
+import remap_slogan from './remap/remap-slogan.jpg';
+import remap_paper_storyboard from './remap/remap_paper_storyboard.png';
+import remap_logo from './remap/remap_logo.jpg'
+import remap_logo_sketches from './remap/remap_logo_sketches.jpg'
+import remap_screens_before from './remap/remap_screens_before.png'
+import remap_results from './remap/remap_results.jpg';
+
  
 function RemapContent(props) {
   return (
@@ -202,8 +202,6 @@ function RemapContent(props) {
         <h3>What I learned</h3>
         <p>As the project was based on my original concept, I had to let go of what I’d created and allow it to grow through our collaborative creative process. Through doing this, Re:Map turned into something greater than I could have ever expected, and I’m very proud to have worked on it as part of the creative team and grateful to have been able to do so. I also got to explore new creative practices and dimensions, such as the punk aesthetic, motion design and editing a fully animated film. I learned to trust my gut more, as well as myself to make really cool design choices and develop great product concepts.</p>
       </div>
-
-      <BackToTop />
 
     </div>
 

@@ -1,14 +1,13 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import rav from './assets/swedishanimals/rav.gif';
-import sketches from './assets/swedishanimals/sketches.png';
-import music_and_art from './assets/swedishanimals/music_and_art.png';
-import first_fox from './assets/swedishanimals/first_fox.png';
-import ui_ux from './assets/swedishanimals/ui_ux.gif';
-import ui_ux_sketch from './assets/swedishanimals/kp-sketch.png';
-import kp_moodboard from './assets/swedishanimals/moodboard-kp.png';
-import bjorn from './assets/swedishanimals/bjorn.gif';
-import BackToTop from "./BackToTop.js";
+import FullImage from "../CaseCmpnts.js";
+import rav from './swedishanimals/rav.gif';
+import sketches from './swedishanimals/sketches.png';
+import music_and_art from './swedishanimals/music_and_art.png';
+import first_fox from './swedishanimals/first_fox.png';
+import ui_ux from './swedishanimals/ui_ux.gif';
+import ui_ux_sketch from './swedishanimals/kp-sketch.png';
+import kp_moodboard from './swedishanimals/moodboard-kp.png';
+import bjorn from './swedishanimals/bjorn.gif';
 
 
  
@@ -116,8 +115,6 @@ function SwAnimalsContent(props) {
         <h3>What I learned</h3>
         <p>Through working on Codimals, I learnt that even small scale projects can take a lot of time when you’re working with new code libraries. It also taught me to draw on previous experience and represent a target audience empathetically when direct user research isn’t an option. Working with Simon was great for me, as I at the time tended to lean more practical and forgo the artistic parts of creative projects. He helped me understand that you can combine both practicality and efficiency with artistic choices to create meaningful user experiences.</p>
       </div>
-
-      <BackToTop />
 
     </div>
 

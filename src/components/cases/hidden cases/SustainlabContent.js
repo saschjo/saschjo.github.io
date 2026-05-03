@@ -1,13 +1,10 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import sustainlab_head from "./assets/sustainlab/sustainlab_head.gif";
-import sustainlab_lofi from "./assets/sustainlab/sustainlab_lofi.jpg";
-import sustainlab_logo from "./assets/sustainlab/sustainlab_logo.png";
-import sustainlab_final from './assets/sustainlab/sustainlab_final.jpg';
-import BackToTop from "./BackToTop.js";
+import FullImage from "../CaseCmpnts.js";
+import sustainlab_head from "../../assets/sustainlab/sustainlab_head.gif";
+import sustainlab_lofi from "../../assets/sustainlab/sustainlab_lofi.jpg";
+import sustainlab_logo from "../../assets/sustainlab/sustainlab_logo.png";
+import sustainlab_final from '../../assets/sustainlab/sustainlab_final.jpg';
 
-
- 
 function SustainlabContent(props) {
   return (
     <div className="InnerCaseWrapper">
@@ -52,12 +49,10 @@ function SustainlabContent(props) {
       
       </div>
 
-
-      <BackToTop />
-
     </div>
 
   )
 }
- 
+
 export default SustainlabContent;
+

@@ -1,11 +1,11 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import leo_box from "./assets/leo/leo_box.png";
-import leo_karta from "./assets/leo/leo_karta.png";
-import leo_reklam from "./assets/leo/leo_reklam.jpg";
-import leo_process from "./assets/leo/leo_process.jpg";
-import leo_logos from "./assets/leo/leo_logos.png";
-import BackToTop from "./BackToTop.js";
+import FullImage from "../CaseCmpnts.js";
+import leo_box from "../../assets/leo/leo_box.png";
+import leo_karta from "../../assets/leo/leo_karta.png";
+import leo_reklam from "../../assets/leo/leo_reklam.jpg";
+import leo_process from "../../assets/leo/leo_process.jpg";
+import leo_logos from "../../assets/leo/leo_logos.png";
+import BackToTop from "../../BackToTop.js";
 
 
  

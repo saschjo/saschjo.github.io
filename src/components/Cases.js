@@ -1,19 +1,20 @@
 import React from "react"
-import ProjectObject from './portfolio-object.js';
-import MittUppdragContent from './MittUppdragContent.js';
-import RemapContent from './RemapContent.js';
-import SwAnimalsContent from './SwAnimalsContent.js';
-import InternetskolanContent from './InternetskolanContent.js';
-import SustainlabContent  from './SustainlabContent.js';
-import LegimeetContent from './LegimeetContent.js';
-import LeoContent from "./LeoContent.js";
-import MosaikContent from "./MosaikContent.js";
-import mosaik_thumb from './assets/mosaik/mosaik_thumb.png';
-import remap_1 from './assets/remap/remap_1.jpg';
-import internetskolan_framsida from './assets/internetskolan/internetskolan_framsida.gif';
-import rav from './assets/swedishanimals/rav.gif';
-import legimeet_vote from "./assets/legimeet/legimeet_vote.gif";
-import mitt_uppdrag from "./assets/Verktyg_ Grid.png";
+import ProjectObject from './cases/portfolio-object.js';
+import MittUppdragContent from './cases/MittUppdrag/MittUppdragContent.js';
+import RemapContent from './cases/Remap/RemapContent.js';
+import SwAnimalsContent from './cases/Codimals/SwAnimalsContent.js';
+import InternetskolanContent from './cases/Internetskolan/InternetskolanContent.js';
+import SustainlabContent  from './cases/hidden cases/SustainlabContent.js';
+import LegimeetContent from './cases/Legimeet/LegimeetContent.js';
+import LeoContent from "./cases/hidden cases/LeoContent.js";
+import MosaikContent from "./cases/Mosaik/MosaikContent.js";
+import mosaik_components from './cases/Mosaik/mosaik/mosaik-components.png';
+import remap_1 from './cases/Remap/remap/remap_1.jpg';
+import internetskolan_framsida from './cases/Internetskolan/internetskolan/internetskolan_framsida.gif';
+import rav from './cases/Codimals/swedishanimals/rav.gif';
+import legimeet_vote from "./cases/Legimeet/legimeet/legimeet_vote.gif";
+import mitt_uppdrag from "./cases/MittUppdrag/MittUppdrag/Verktyg_ Grid.png";
+import sustainlab_thumb from "./assets/sustainlab/sustainlab_thumb.png";
 
 function MittUppdrag(props) {
 
@@ -40,14 +41,14 @@ function Mosaik(props) {
   return (
           <div className="project-1">
               <ProjectObject
-                image={mosaik_thumb}
+                image={mosaik_components}
                 title="Mosaik Design System"
                 category="Design System"
                 client=" HSB Affärsstöd"
                 mission=" Custom Atomic Design System"
                 myrole=" Design System Lead and UI/UX Engineer"
                 datum="2022 – Ongoing"
-                description="HSB, a top Swedish housing management cooperative, manages homes for 1 in 10 Swedes. They offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
+                description="HSB offers digital services to simplify living and Board Work in co-up councils. However, they faced challenges in scaling sustainably while meeting user needs. Recognizing that a design system could address many of these issues, we developed one, with me leading the project as the Design System Lead."
                   />
               <MosaikContent />
 
@@ -161,6 +162,7 @@ function SustainLab(props) {
         <div className="project-container">
           <div className="project-1">
               <ProjectObject
+                  image={sustainlab_thumb}
                   title="SustainLab-SH"
                   category="Web Development and Graphic Design"
                   uppdragstyp=" Client project"

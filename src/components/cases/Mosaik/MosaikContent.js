@@ -1,16 +1,9 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import mosaik_img from './assets/mosaik/mosaik_img.png';
-import mosaik_img_cover from './assets/mosaik/mosaik_img_cover.png';
-import mosaik_tokens from './assets/mosaik/mosaik-tokens.png'
-import mosaik_colors from './assets/mosaik/mosaik-colors.png'
-import mosaik_components from './assets/mosaik/mosaik-components.png'
-import mosaik_modals from './assets/mosaik/modals.png'
-import placeholder from './assets/mosaik/placeholder.png';
-import minprofil from './assets/mosaik/minprofil.png';
-import mosaik_img_icons from './assets/mosaik/mosaik_img_icons.png';
-import mosaik_datatable from './assets/mosaik/data table.png';
-import mosaik_img_btn from './assets/mosaik/mosaik_img_btn.png';
+import FullImage from "../CaseCmpnts.js";
+import mosaik_datatable from './mosaik/data table.png';
+import mosaik_components from './mosaik/mosaik-components.png';
+import mosaik_img_btn from './mosaik/mosaik_img_btn.png';
+import mosaik_modals from './mosaik/modals.png';
  
 function MosaikContent(props) {
   return (
@@ -20,25 +13,19 @@ function MosaikContent(props) {
         <h3>Project introduction</h3>
         <p>HSB Affärsstöd is a nationally co-operated organization with over 100 years of history and a broad, diverse user base—from young adults seeking their first apartment to senior stakeholders involved in co-op councils.</p>
         <p>I was brought on as a UX Engineer to help bridge the gap between design and development. Early on, I identified several friction points that were slowing down delivery, wasting resources, and diminishing user satisfaction.</p>
-        <h4>My role</h4>
-        <p>I created Mosaik, HSB’s first-ever design system, and led its development for 2.5 years. I was responsible for independently designing, testing, and documenting the vast majority of components, tokens, and patterns. Through extensive collaboration and stakeholder advocacy, I turned Mosaik from a personal initiative into a critical, organization-wide investment.</p>
-    </div>
 
-    <FullImage 
-      image={mosaik_datatable}
-      caption="A data table component I designed to be flexible and reusable across different contexts. The construction is atomic, meaning that each part (down to every cell and its contents) is its own component in Figma."
-      />
-
-    <div className="case-text">
         <h3>Problem statement</h3>
         <p>HSB Affärsstöd offered over 30 different services but lacked a unified design approach. The waterfall process relied heavily on internal assumptions, often ignoring actual user needs. This led to a fragmented UX landscape: inconsistent design patterns, long development times, and significant user frustration.</p>
         <p>Teams frequently rebuilt components from scratch, leading to inefficiencies and confusion. Internally and externally, trust in the digital experience was low. Speculative features aimed at speculative needs cost time, money, and morale.</p>
         <p>So how could we meet the needs of both users and internal teams in a scalable, maintainable way?</p>
+
+        <h4>My role</h4>
+        <p>I created Mosaik, HSB’s first-ever design system, and led its development for 2.5 years. I was responsible for independently designing, testing, and documenting the vast majority of components, tokens, and patterns. Through extensive collaboration and stakeholder advocacy, I turned Mosaik from a personal initiative into a critical, organization-wide investment.</p>
       </div>
 
       <FullImage 
-      image={mosaik_modals}
-      caption="An excerpt from the Mosaik documentation utilizing the spacing tokens and types of mobile modals."
+      image={mosaik_datatable}
+      caption="A data table component I designed to be flexible and reusable across different contexts. The construction is atomic, meaning that each part (down to every cell and its contents) is its own component in Figma."
       />
 
       <div className="case-text">
@@ -84,6 +71,11 @@ function MosaikContent(props) {
         <p>The group helped future-proof the system, align business goals with technical feasibility, and encourage better communication between decision-makers and implementers.</p>
       </div>
 
+      <FullImage 
+      image={mosaik_modals}
+      caption="An excerpt from the Mosaik documentation utilizing the spacing tokens and types of mobile modals."
+      />
+      
       <div class ="case-text">
         <h3>Challenges and how I solved them</h3>
         <h4>Time and prioritization</h4>

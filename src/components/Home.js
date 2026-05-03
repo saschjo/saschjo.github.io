@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'; 
 import BackToTop from "./BackToTop.js";
+import Orb from './assets/favicon.png';
  
 function Home(props) {
 
@@ -8,10 +9,16 @@ function Home(props) {
     <div>
         <div id="upper-home">
             <div className="frontpage">
-              <h1 id="me">Hello! I'm Sascha</h1>
-              <h1 id="designer">a <NavLink to="/about">UI/UX Designer</NavLink> that <NavLink to="/projects">Codes</NavLink></h1>
-              <h1 id="welcome">and specializes in Design Systems{/*  <span id="blinkis">|</span> */}</h1>
-              <span id="caption">(and yes, I designed and developed this website with ❤️ in React)</span>
+              <h1 id="me">schjo</h1>
+
+              {/* 
+              <h1 id="designer">I'm a <NavLink to="/about">Product Lead</NavLink>, <NavLink to="/projects">UX Engineer</NavLink></h1>
+              <h1 id="welcome">and Design System specialist{/*  <span id="blinkis">|</span> 
+
+               <span id="caption">(and yes, I designed and developed this website with ❤️ in React)</span>
+              
+              */}
+             
             </div> 
         </div>
       

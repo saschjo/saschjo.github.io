@@ -9,10 +9,15 @@ import Home from './components/Home.js';
 import Contact from './components/Contact.js';
 import { Mosaik } from './components/Cases.js';
 import './App.scss';
+import Cursor from "./cursor.js";
  
 function App() {
 
+
   return (
+    <>
+    <Cursor />
+
     <BrowserRouter>
       <div className="App">
     
@@ -36,9 +41,8 @@ function App() {
       </div>
 
     </BrowserRouter>
-    
+    </>
   );
-  
 }
  
 export default App;

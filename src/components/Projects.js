@@ -1,14 +1,12 @@
 import React from "react"
-import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
+import Thumbnail from './cases/Thumbnail.js'; // Import the Thumbnail component
 import Hello from './Hello.js';
-import mosaik_thumb from './assets/mosaik/mosaik_thumb.png';
+import mosaik_components from './cases/Mosaik/mosaik/mosaik-components.png';
+import mittuppdrag_thumb from './cases/MittUppdrag/MittUppdrag/mittuppdrag_illu.png';
 import remap_thumb from './assets/remap_thumb.png';
 import codimals_thumb from './assets/codimals_thumb.png';
-import internetskolan_thumb from './assets/internetskolangif.gif';
-import sustainlab_thumb from './assets/sustainlab/sustainlab_thumb.png';
-import mitt_uppdrag from './assets/Verktyg_ Grid.png';
-import leo_thumb from './assets/leo/leo_thumb.png';
-import legimeet_thumb from './assets/legimeet/legimeeet_thumb.png';
+import internetskolan_thumb from './cases/Internetskolan/internetskolan/internetskolan_framsida.gif';
+import legimeet_thumb from './cases/Legimeet/legimeet/legimeeet_thumb.png';
 
 function Projects(props) {
 
@@ -18,21 +16,38 @@ function Projects(props) {
         <div className="page-con">
             <div className="PageWrapper">
             <Hello 
-            headlineContent="Selected Work"
-            subHeadline="A deep dive through a selection of projects I've been a part of."
+            headlineContent="Case studies"
+            subHeadline="Curious about my work? I'm not surprised. Here are some of my favorite projects."
             />
                 <div className="thumbnail-container">
 
+                     <Thumbnail
+                        link="/Mosaik"
+                        title="Nya Mitt Uppdrag"
+                        tagline="HSB Riksförbund"
+                        image={mittuppdrag_thumb}
+                        desc="A platform built on internal assumption and utility-first thinking lead to a lot of features but a poor user experience. I held a design sprint to identify the core problems and opportunities, and then lead the design and vision for a new platform that was more in line with user needs and business goals." 
+                        category={<div className="categories">
+                                <span className="tag">Design Lead</span>
+                                <span className="tag">Workshop facilitation</span>
+                                <span className="tag">UX/UI</span>
+                                <span className="tag">UX Research</span>
+                                <span className="tag">Strategy</span>
+                                <span className="tag">Illustration</span>
+                                </div>}
+                    />
+
                     <Thumbnail
                         link="/Mosaik"
-                        title="Mosaik Design System"
-                        image={mosaik_thumb}
-                        desc="HSB offer digital services to simplify living and board work but struggled to scale sustainably while meeting user needs. I realized a design system could solve many issues, so we created one together."
+                        title="Mosaik – HSB's Design System"
+                        tagline="HSB Riksförbund"
+                        image={mosaik_components}
+                        desc="HSB struggled to scale product sustainably while meeting user needs and impending accessibility regulation. As a UX Engineer, I realized a design system could solve a lot of these problems, so I crafted one for them and lead its development for 4 years."
                         category={<div className="categories">
-                                <span className="tag">Design System Lead</span>
-                                <span className="tag">UI Design</span>
+                                <span className="tag">Design Lead</span>
+                                <span className="tag">UX/UI</span>
                                 <span className="tag">UX Engineering</span>
-                                <span className="tag">UX Strategy</span>
+                                <span className="tag">Accessibility</span>
                                 </div>}
                     />
 
@@ -40,6 +55,7 @@ function Projects(props) {
                         link="/Internetskolan"
                         image={internetskolan_thumb}
                         title="Internetskolan"
+                        tagline="Spånga-Tensta municipality administration"
                         desc="Product design and prototype development to bridge the digital divide, commissioned by Spånga-Tensta municipality administration."
                         category={<div className="categories">
                             <span className="tag">Product Design</span>
@@ -51,6 +67,7 @@ function Projects(props) {
                     <Thumbnail
                         link="/Remap"
                         title="Re:map"
+                        tagline="Personal project"
                         image={remap_thumb}
                         desc="Design concept, graphic identity and animation for a project aimed at inspiring teens to get involved in urban development."
                         category={<div className="categories">

@@ -1,8 +1,7 @@
 import React from "react";
-import FullImage from "./CaseCmpnts.js";
-import legimeet_vote from "./assets/legimeet/legimeet_vote.gif";
-import legimeet_example from "./assets/legimeet/legimeet_example.jpg";
-import BackToTop from "./BackToTop.js";
+import FullImage from "../CaseCmpnts.js";
+import legimeet_vote from "./legimeet/legimeet_vote.gif";
+import legimeet_example from "./legimeet/legimeet_example.jpg";
 
 
  
